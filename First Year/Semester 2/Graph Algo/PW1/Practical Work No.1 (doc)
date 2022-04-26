@@ -1,0 +1,87 @@
+ Practical Work No. 1
+Documentation
+
+	The implementation of the solution uses the Python programming language.
+	For solving the problem, there was defined a class named Graph which represents a directed graph, a class named UI for testing the requested operations and another 3 additional functions for reading the graph from a file, writing the graph to a file and building a random graph with a  given number of vertices and edges. In what follows, an edge is considered as a triple of form (origin_vertex, target_vertex, edge_cost).
+	The class Graph will provide the following functions/methods:
+	is_edge(self, x, y)
+# a function that verifies if there is an edge between x and y (x,y - vertices)
+
+	outbound(self)
+	# a function that returns of outbound vertices of the graph
+	inbound(self)
+# a function that returns of outbound vertices of the graph
+	number_of_vertices(self)
+# a function that returns the number of vertices
+	number_of_edges(self)
+# a function that returns the number of vertices
+	costs(self)
+# a function that returns the dictionary of costs
+	parse_vertices(self)
+# a function that returns an iterable of the vertices
+	find_edge(self, origin_vertex, target_vertex)
+# a function that verifies if there is an edge between vertices x and y and returns the cost of it if yes or raises an exception otherwise
+	parse_outbound(self, vertex)
+# a function that returns an iterable of the outbound neighbours of vertex x or raises an exception if x is not a vertex
+	parse_inbound(self, vertex)
+# a function that returns an iterable of the inbound neighbours of vertex x or None if x is not a vertex
+	parse_outbound_with_costs(self, vertex)
+# a function that returns an iterable of the edge costs of the outbound neighbours of the given vertex or raises an exception if the value is not a vertex
+	parse_inbound_with_costs(self, vertex)
+# a function that returns an iterable of the edge costs of the inbound neighbours of the given vertex or raises an exception if the value is not a vertex
+	get_degree_out(self, vertex)
+# a function that returns the outbound degree of the given vertex if this one exists
+	get_degree_in(self, vertex)
+# a function that returns the inbound degree of the given vertex if this one exists
+	add_vertex(self, vertex)
+# a function that adds a vertex to the graph if this is not in the graph yet
+	remove_vertex(self, vertex)
+# a function that removes a vertex from the graph if this is in the graph
+	add_edge(self, origin_vertex, target_vertex, edge_cost)
+# a function that adds an edge to the graph together with its cost
+	remove_edge(self, , origin_vertex, target_vertex)
+# a function that removes an edge from the graph if it exists
+	make_copy(self)
+# a function that returns a copy of the graph
+	modify_cost(self, , origin_vertex, target_vertex, cost)
+# a function that modifies the cost of an edge if it exists	
+
+	The class Graph is initialized with the following data:
+	self._outbound – a dictionary for keeping the outbound of each vertex, the vertices representing the keys
+	self._inbound - a dictionary for keeping the inbound of each vertex, the vertices representing the keys
+	self._costs – a dictionary for keeping the edges of the graph and their costs, the edges representing the keys. In this case, the edges are just tuples of form (origin_vertex, target_vertex)
+The 2 additional functions for reading/writing from/in a file and the one for building a random graph are:
+	read_graph(file_path)
+# a function that reads a graph from a given file path and returns an object of class Graph
+file_path – string
+	write_graph_to_file(file_path)
+    A function that writes a given graph into a text file.
+    :parameter graph: an object of class Graph
+    :parameter file_path: a string representing the given file.
+	build_random_graph(number_of_vertices, number_of_edges)
+# a function that receives 2 integers (number_of_vertices and number_of_edges) and generates and returns a random graph.
+
+	The class UI will provide the following methods:
+	print_menu – a function that prints the menu of the application
+	run_console – a function that runs everything in the console, takes the input from the user and pass it to the program
+	print_number_of_vertices -  a function that prints the number of vertices
+	print_number_of_edges -  a function that prints the number of edges
+	print_parse_vertices -  a function that prints the vertices of the graph
+	ui_find_edge – a function that takes as input two vertices from the user, passes the parameters to the function find_edge from the class Graph and prints the result
+	ui_add_edge – a function that takes as input two vertices and a cost from the user, passes the parameters to the function add_edge from the class Graph 
+	ui_remove_edge – a function that takes as input two vertices and from the user, passes the parameters to the function remove_edge from the class Graph 
+	ui_add_vertex – a function that takes as input one vertex from the user and passes the parameter to the function add_vertex from the class Graph 
+	ui_remove_vertex – a function that takes as input one vertex from the user and passes the parameter to the function remove_vertex from the class Graph 
+	list_outbound_of_vertex – a function that takes as input one vertex from the user and passes the parameter to the function parse_outbound from the class Graph, and then prints the outbound neighbors of the vertex  
+	list_inbound_of_vertex – a function that takes as input one vertex from the user and passes the parameter to the function parse_inbound from the class Graph, and then prints the inbound neighbors of the vertex  
+	ui_get_degree_in – a function that takes as input one vertex from the user and passes the parameter to the function get_degree_in from the class Graph, and then prints the result
+	ui_get_degree_out – a function that takes as input one vertex from the user and passes the parameter to the function get_degree_out from the class Graph, and then prints the result
+	ui_modify_cost – a function that takes as input two vertices and a cost from the user, passes the parameters to the function modify_cost from the class Graph 
+	list_outbound_of_vertex_with_costs – a function that takes as input one vertex from the user and passes the parameter to the function parse_outbound_with_costs from the class Graph, and then prints the costs of the edges that are outbound with the vertex  
+	list_inbound_of_vertex_with_costs – a function that takes as input one vertex from the user and passes the parameter to the function parse_inbound_with_costs from the class Graph, and then prints the costs of the edges that are inbound with the vertex  
+
+The class Graph is initialized with the following data:
+	self._file_path – a string representing the path of the file from where the graph is read at the application start
+
+In the UI class, after every instruction the graph is written in the file from where was read.
+
