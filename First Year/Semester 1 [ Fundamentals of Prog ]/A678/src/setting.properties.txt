@@ -1,4 +1,0 @@
-repository = inmemory
-movies = ""
-clients = ""
-rentals = ""
