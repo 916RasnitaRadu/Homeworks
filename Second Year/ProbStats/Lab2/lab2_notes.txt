@@ -1,0 +1,25 @@
+X = (		k		) , k = 0,n
+	Cn * p^k * (1-p)^(n-k)
+
+p = prob of success
+k = nr of successes
+n = nr of trials
+
+pdf: f(x) = P(X = x)
+cdf: F(x) = P(X <= x)
+
+ex: binocdf, binopdf
+
+As long as you are working with discrete probabilty laws, the pdf must be a graph of points and a cdf must be a stairway (to heaven) of functions.
+
+--------------
+
+Application:
+A coin is tossed 3 times. 
+Let X denote the number of heads that appear.
+a) Find the probability distribution function of X. What type of distribution does X have?
+b) Find the cumulative distribution function of X, FX.
+c) Find P(X= 0) andP(X6= 1).
+d) Find P(X≤2),P(X <2).
+e) Find P(X≥1),P(X >1).
+f) Write a Matlab code that simulates 3 coin tosses and computes the value of thevariable X.
