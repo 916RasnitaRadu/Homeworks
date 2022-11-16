@@ -16,6 +16,16 @@ public class IntValue implements Value{
     }
 
     @Override
+    public boolean equals(Value anotherValue) {
+        if (anotherValue.getType() instanceof IntType)
+        {
+            IntValue castValue = (IntValue) anotherValue;
+            return value == castValue.getValue();
+        }
+        return false;
+    }
+
+    @Override
     public Type getType() {
         return new IntType();
     }

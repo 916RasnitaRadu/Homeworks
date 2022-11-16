@@ -1,0 +1,178 @@
+======EXE_STACK======
+{DeclarationStatement{varf : string }; varf = ValueExpression("D:\Faculta\MAP\MAP2022-2023\Interpretersmr\src\View\test.in"); open(VariableExpression(varf)); DeclarationStatement{varc : int }; read(VariableExpression(varf),varc); Print{VariableExpression(varc)}; read(VariableExpression(varf),varc); Print{VariableExpression(varc)}; close(VariableExpression(varf))
+}
+======SYM_TABLE======
+======OUT======
+======FILE_TABLE======
+
+======EXE_STACK======
+{varf = ValueExpression("D:\Faculta\MAP\MAP2022-2023\Interpretersmr\src\View\test.in"); open(VariableExpression(varf)); DeclarationStatement{varc : int }; read(VariableExpression(varf),varc); Print{VariableExpression(varc)}; read(VariableExpression(varf),varc); Print{VariableExpression(varc)}; close(VariableExpression(varf))
+DeclarationStatement{varf : string }
+}
+======SYM_TABLE======
+======OUT======
+======FILE_TABLE======
+
+======EXE_STACK======
+{varf = ValueExpression("D:\Faculta\MAP\MAP2022-2023\Interpretersmr\src\View\test.in"); open(VariableExpression(varf)); DeclarationStatement{varc : int }; read(VariableExpression(varf),varc); Print{VariableExpression(varc)}; read(VariableExpression(varf),varc); Print{VariableExpression(varc)}; close(VariableExpression(varf))
+}
+======SYM_TABLE======
+varf : ""
+======OUT======
+======FILE_TABLE======
+
+======EXE_STACK======
+{open(VariableExpression(varf)); DeclarationStatement{varc : int }; read(VariableExpression(varf),varc); Print{VariableExpression(varc)}; read(VariableExpression(varf),varc); Print{VariableExpression(varc)}; close(VariableExpression(varf))
+varf = ValueExpression("D:\Faculta\MAP\MAP2022-2023\Interpretersmr\src\View\test.in")
+}
+======SYM_TABLE======
+varf : ""
+======OUT======
+======FILE_TABLE======
+
+======EXE_STACK======
+{open(VariableExpression(varf)); DeclarationStatement{varc : int }; read(VariableExpression(varf),varc); Print{VariableExpression(varc)}; read(VariableExpression(varf),varc); Print{VariableExpression(varc)}; close(VariableExpression(varf))
+}
+======SYM_TABLE======
+varf : "D:\Faculta\MAP\MAP2022-2023\Interpretersmr\src\View\test.in"
+======OUT======
+======FILE_TABLE======
+
+======EXE_STACK======
+{DeclarationStatement{varc : int }; read(VariableExpression(varf),varc); Print{VariableExpression(varc)}; read(VariableExpression(varf),varc); Print{VariableExpression(varc)}; close(VariableExpression(varf))
+open(VariableExpression(varf))
+}
+======SYM_TABLE======
+varf : "D:\Faculta\MAP\MAP2022-2023\Interpretersmr\src\View\test.in"
+======OUT======
+======FILE_TABLE======
+
+======EXE_STACK======
+{DeclarationStatement{varc : int }; read(VariableExpression(varf),varc); Print{VariableExpression(varc)}; read(VariableExpression(varf),varc); Print{VariableExpression(varc)}; close(VariableExpression(varf))
+}
+======SYM_TABLE======
+varf : "D:\Faculta\MAP\MAP2022-2023\Interpretersmr\src\View\test.in"
+======OUT======
+======FILE_TABLE======
+D:\Faculta\MAP\MAP2022-2023\Interpretersmr\src\View\test.in
+
+======EXE_STACK======
+{read(VariableExpression(varf),varc); Print{VariableExpression(varc)}; read(VariableExpression(varf),varc); Print{VariableExpression(varc)}; close(VariableExpression(varf))
+DeclarationStatement{varc : int }
+}
+======SYM_TABLE======
+varf : "D:\Faculta\MAP\MAP2022-2023\Interpretersmr\src\View\test.in"
+======OUT======
+======FILE_TABLE======
+D:\Faculta\MAP\MAP2022-2023\Interpretersmr\src\View\test.in
+
+======EXE_STACK======
+{read(VariableExpression(varf),varc); Print{VariableExpression(varc)}; read(VariableExpression(varf),varc); Print{VariableExpression(varc)}; close(VariableExpression(varf))
+}
+======SYM_TABLE======
+varf : "D:\Faculta\MAP\MAP2022-2023\Interpretersmr\src\View\test.in"
+varc : 0
+======OUT======
+======FILE_TABLE======
+D:\Faculta\MAP\MAP2022-2023\Interpretersmr\src\View\test.in
+
+======EXE_STACK======
+{Print{VariableExpression(varc)}; read(VariableExpression(varf),varc); Print{VariableExpression(varc)}; close(VariableExpression(varf))
+read(VariableExpression(varf),varc)
+}
+======SYM_TABLE======
+varf : "D:\Faculta\MAP\MAP2022-2023\Interpretersmr\src\View\test.in"
+varc : 0
+======OUT======
+======FILE_TABLE======
+D:\Faculta\MAP\MAP2022-2023\Interpretersmr\src\View\test.in
+
+======EXE_STACK======
+{Print{VariableExpression(varc)}; read(VariableExpression(varf),varc); Print{VariableExpression(varc)}; close(VariableExpression(varf))
+}
+======SYM_TABLE======
+varf : "D:\Faculta\MAP\MAP2022-2023\Interpretersmr\src\View\test.in"
+varc : 15
+======OUT======
+======FILE_TABLE======
+D:\Faculta\MAP\MAP2022-2023\Interpretersmr\src\View\test.in
+
+======EXE_STACK======
+{read(VariableExpression(varf),varc); Print{VariableExpression(varc)}; close(VariableExpression(varf))
+Print{VariableExpression(varc)}
+}
+======SYM_TABLE======
+varf : "D:\Faculta\MAP\MAP2022-2023\Interpretersmr\src\View\test.in"
+varc : 15
+======OUT======
+======FILE_TABLE======
+D:\Faculta\MAP\MAP2022-2023\Interpretersmr\src\View\test.in
+
+======EXE_STACK======
+{read(VariableExpression(varf),varc); Print{VariableExpression(varc)}; close(VariableExpression(varf))
+}
+======SYM_TABLE======
+varf : "D:\Faculta\MAP\MAP2022-2023\Interpretersmr\src\View\test.in"
+varc : 15
+======OUT======
+15
+======FILE_TABLE======
+D:\Faculta\MAP\MAP2022-2023\Interpretersmr\src\View\test.in
+
+======EXE_STACK======
+{Print{VariableExpression(varc)}; close(VariableExpression(varf))
+read(VariableExpression(varf),varc)
+}
+======SYM_TABLE======
+varf : "D:\Faculta\MAP\MAP2022-2023\Interpretersmr\src\View\test.in"
+varc : 15
+======OUT======
+15
+======FILE_TABLE======
+D:\Faculta\MAP\MAP2022-2023\Interpretersmr\src\View\test.in
+
+======EXE_STACK======
+{Print{VariableExpression(varc)}; close(VariableExpression(varf))
+}
+======SYM_TABLE======
+varf : "D:\Faculta\MAP\MAP2022-2023\Interpretersmr\src\View\test.in"
+varc : 30
+======OUT======
+15
+======FILE_TABLE======
+D:\Faculta\MAP\MAP2022-2023\Interpretersmr\src\View\test.in
+
+======EXE_STACK======
+{close(VariableExpression(varf))
+Print{VariableExpression(varc)}
+}
+======SYM_TABLE======
+varf : "D:\Faculta\MAP\MAP2022-2023\Interpretersmr\src\View\test.in"
+varc : 30
+======OUT======
+15
+======FILE_TABLE======
+D:\Faculta\MAP\MAP2022-2023\Interpretersmr\src\View\test.in
+
+======EXE_STACK======
+{close(VariableExpression(varf))
+}
+======SYM_TABLE======
+varf : "D:\Faculta\MAP\MAP2022-2023\Interpretersmr\src\View\test.in"
+varc : 30
+======OUT======
+15
+30
+======FILE_TABLE======
+D:\Faculta\MAP\MAP2022-2023\Interpretersmr\src\View\test.in
+
+======EXE_STACK======
+{}
+======SYM_TABLE======
+varf : "D:\Faculta\MAP\MAP2022-2023\Interpretersmr\src\View\test.in"
+varc : 30
+======OUT======
+15
+30
+======FILE_TABLE======
+

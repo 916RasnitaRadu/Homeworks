@@ -8,9 +8,9 @@ import Model.Values.Value;
 
 public class ArithmeticExpression implements Expression{
     private Expression expression1, expression2; //
-    private int operation; // 1 - '+'; 2 - '-'; 3 - '*'; 4 - '/'
+    private String operation; // 1 - '+'; 2 - '-'; 3 - '*'; 4 - '/'
 
-    public ArithmeticExpression(int operation,Expression expression1, Expression expression2) {
+    public ArithmeticExpression(String operation,Expression expression1, Expression expression2) {
         this.expression1 = expression1;
         this.expression2 = expression2;
         this.operation = operation;
@@ -28,16 +28,16 @@ public class ArithmeticExpression implements Expression{
                 int number1, number2;
                 number1 = integer1.getValue();
                 number2 = integer2.getValue();
-                if (operation == 1) {
+                if (operation.equals("+")) {
                     return new IntValue(number1 + number2);
                 }
-                if (operation == 2) {
+                if (operation.equals("-")) {
                     return new IntValue(number1 - number2);
                 }
-                if (operation == 3) {
+                if (operation.equals("*")) {
                     return new IntValue(number1 * number2);
                 }
-                if (operation == 4) {
+                if (operation.equals("/")) {
                     if (number2 == 0) throw new InterpreterException("ERROR: Division by zero");
                     return new IntValue(number1 / number2);
                 }
@@ -69,11 +69,11 @@ public class ArithmeticExpression implements Expression{
         this.expression2 = expression2;
     }
 
-    public int getOperation() {
+    public String getOperation() {
         return operation;
     }
 
-    public void setOperation(int operation) {
+    public void setOperation(String operation) {
         this.operation = operation;
     }
 

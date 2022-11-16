@@ -16,6 +16,16 @@ public class BoolValue implements Value{
     }
 
     @Override
+    public boolean equals(Value anotherValue) {
+        if (anotherValue instanceof BoolValue)
+        {
+            BoolValue castObject = (BoolValue) anotherValue;
+            return value == castObject.value;
+        }
+        return false;
+    }
+
+    @Override
     public Type getType() {
         return new BoolType();
     }

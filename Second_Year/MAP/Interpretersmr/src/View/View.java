@@ -5,13 +5,16 @@ import Exceptions.InterpreterException;
 import Model.Expressions.ArithmeticExpression;
 import Model.Expressions.ValueExpression;
 import Model.Expressions.VariableExpression;
+import Model.ProgramState.ProgramState;
 import Model.Statements.*;
 import Model.Types.BoolType;
 import Model.Types.IntType;
+import Model.Types.StringType;
 import Model.Values.BoolValue;
 import Model.Values.IntValue;
+import Model.Values.StringValue;
 
-import javax.swing.text.StyledEditorKit;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class View {
@@ -22,18 +25,30 @@ public class View {
         this.controller = controller;
     }
 
+    private void printStepMenu()
+    {
+        System.out.println("a. Do it all in one step");
+        System.out.println("b. Do it step by step.");
+    }
+
     private void printMenu()
     {
         System.out.println("Select what program you want to run: ");
         System.out.println("1. Run program 1.");
+        printProgram1();
         System.out.println("2. Run program 2.");
+        printProgram2();
         System.out.println("3. Run program 3.");
-        System.out.println("4. Exit :( ");
+        printProgram3();
+        System.out.println("4. Run program 4.");
+        printProgram4();
+        System.out.println("5. Exit :( ");
     }
 
     public void run()
     {
-        int option;
+        int option, option2;
+
 
         while (true)
         {
@@ -53,6 +68,9 @@ public class View {
                         runProgram3();
                         break;
                     case 4:
+                        runProgram4();
+                        break;
+                    case 5:
                         System.out.println("Bye");
                         System.exit(0);
                     default:
@@ -67,18 +85,33 @@ public class View {
         }
     }
 
-    private void printProgram2()
+    public static String getProg1()
+    {
+        return "int v;\nv = 2;\nPrint(v);\n";
+    }
+
+    public static String getProg3()
+    {
+        return "bool a;\nv = 2;\nPrint(v);\n";
+    }
+
+    public static String getProg2()
+    {
+        return "int a;\nint v;\na = true;\nIf a Then v = 2 Else v = 3;\nPrint(v);\n";
+    }
+
+    public static void printProgram2()
     {
         System.out.println("Program 2 is: ");
         System.out.println("int a;");
         System.out.println("int b;");
-        System.out.println("a = 2 + 3*5");
+        System.out.println("a = 2 + 3*5;");
         System.out.println("b = a + 1;");
         System.out.println("Print(v);");
         System.out.println();
     }
 
-    private void printProgram1()
+    public static void printProgram1()
     {
         System.out.println("Program 1 is: ");
         System.out.println("int v;");
@@ -87,7 +120,7 @@ public class View {
         System.out.println();
     }
 
-    private void printProgram3()
+    public static void printProgram3()
     {
         System.out.println("Program 3 is: ");
         System.out.println("bool a;");
@@ -98,9 +131,67 @@ public class View {
         System.out.println();
     }
 
+    private void printProgram4()
+    {
+        System.out.println("string varf;");
+        System.out.println("varf = \"test.in\";");
+        System.out.println("openRFile(varf);");
+        System.out.println("int varc");
+        System.out.println("readFile(varf,varc);print(varc);");
+        System.out.println("readFile(varf,varc);print(varc);");
+        System.out.println("closeRFile(varf)");
+        System.out.println();
+    }
+
+    private void runProgram4()
+    {
+        IStatement example4 = new CompoundStatement(new DeclarationStatement(new StringType(), "varf"),
+                new CompoundStatement(new AssignStatement("varf", new ValueExpression(new StringValue("D:\\Faculta\\MAP\\MAP2022-2023\\Interpretersmr\\src\\View\\test.in"))),
+                        new CompoundStatement(new OpenReadFile(new VariableExpression("varf")), new CompoundStatement(
+                                new DeclarationStatement(new IntType(), "varc"), new CompoundStatement(
+                                        new ReadFile(new VariableExpression("varf"), "varc"),
+                                new CompoundStatement(new PrintStatement(new VariableExpression("varc")), new CompoundStatement(
+                                        new ReadFile(new VariableExpression("varf"), "varc"), new CompoundStatement(
+                                                new PrintStatement(new VariableExpression("varc")), new CloseReadFile(new VariableExpression("varf"))))))))));
+
+        controller.add(example4);
+
+        String option;
+        printStepMenu();
+        System.out.print("Your option: ");
+        option = scanner.next();
+
+        if (option.equals("a"))
+        {
+            try {
+                controller.allStep();
+            }
+            catch (InterpreterException | IOException ie)  {
+                System.out.println(ie.getMessage());
+            }
+        }
+        else if (option.equals("b"))
+        {
+            try {
+                ProgramState programState = controller.getProgramState();
+                String option2 = "x";
+                while (option2.equals("x")) {
+                    programState = controller.oneStep(programState);
+                    this.controller.displayProgramState(programState);
+                    System.out.println("Press 'x' to continue");
+                    option2 = scanner.next();
+                }
+            }
+            catch (InterpreterException | IOException ie)
+            {
+                System.out.println(ie.getMessage());
+            }
+        }
+        else {System.out.println("Invalid option!"); }
+    }
+
     private void runProgram3() { // bool a; int v; a = true;
         // If a Then v = 2 Else v = 3; Print(v);
-        printProgram3();
 
         IStatement example3 = new CompoundStatement(
                 new DeclarationStatement(new BoolType(), "a"), new CompoundStatement(
@@ -112,51 +203,139 @@ public class View {
         );
 
         controller.add(example3);
-        try {
-            controller.allStep();
-        }
-        catch (InterpreterException ie)
+
+        String option;
+        printStepMenu();
+        System.out.println("Your option: ");
+        option = scanner.next();
+        if (option.equals("a"))
         {
-            System.out.println(ie.getMessage());
+            try {
+                controller.allStep();
+            }
+            catch (InterpreterException | IOException ie)
+            {
+                System.out.println(ie.getMessage());
+            }
         }
+        else if (option.equals("b"))
+        {
+            try {
+                ProgramState programState = controller.getProgramState();
+                String option2 = "x";
+                while (option2.equals("x")) {
+                    programState = controller.oneStep(programState);
+                    this.controller.displayProgramState(programState);
+                    System.out.println("Press 'x' to continue");
+                    option2 = scanner.next();
+                }
+            }
+            catch (InterpreterException | IOException ie)
+            {
+                System.out.println(ie.getMessage());
+            }
+        }
+        else {System.out.println("Invalid option!"); }
     }
 
 
     private void runProgram2() { // int a; int b; a = 2 + 3*5; b = a + 1; Print(b);
-        printProgram2();
         IStatement example2 = new CompoundStatement(
                 new DeclarationStatement(new IntType(), "a"),
                 new CompoundStatement(new DeclarationStatement(new IntType(), "b"),
-                        new CompoundStatement(new AssignStatement("a", new ArithmeticExpression(1,
+                        new CompoundStatement(new AssignStatement("a", new ArithmeticExpression("+",
                                 new ValueExpression(new IntValue(2)),
-                                new ArithmeticExpression(3, new ValueExpression(new IntValue(3)), new ValueExpression(new IntValue(5))))),
+                                new ArithmeticExpression("*", new ValueExpression(new IntValue(3)), new ValueExpression(new IntValue(5))))),
                                 new CompoundStatement(new AssignStatement("b",
-                                        new ArithmeticExpression(1, new VariableExpression("a"),
-                                                new ArithmeticExpression(1, new VariableExpression("a"), new ValueExpression(new IntValue(1))))),
+                                        new ArithmeticExpression("+", new VariableExpression("a"),
+                                                new ArithmeticExpression("+", new VariableExpression("a"), new ValueExpression(new IntValue(1))))),
                                         new PrintStatement(new VariableExpression("b")))))
         );
         controller.add(example2);
-        try {
-            controller.allStep();
-        }
-        catch (InterpreterException ie)
+
+        String option;
+
+        printStepMenu();
+        System.out.print("Your option: ");
+        option = scanner.next();
+
+        if (option.equals("a"))
         {
-            System.out.println(ie.getMessage());
+            try {
+                controller.allStep();
+            }
+            catch (InterpreterException | IOException ie)
+            {
+                System.out.println(ie.getMessage());
+            }
         }
+        else if (option.equals("b"))
+        {
+            try{
+                ProgramState programState = controller.getProgramState();
+                String option2 = "x";
+                while (option2.equals("x"))
+                {
+                    programState = controller.oneStep(programState);
+                    this.controller.displayProgramState(programState);
+                    System.out.println("Press 'x' to continue");
+                    option2 = scanner.next();
+
+                }
+            }
+            catch (InterpreterException | IOException ie)
+            {
+                System.out.println(ie.getMessage());
+            }
+        }
+        else System.out.println("Invalid option! Try again.");
+
     }
 
     private void runProgram1() { // int v; v = 2; Print(v);
-        printProgram1();
         IStatement example1 = new CompoundStatement(new DeclarationStatement( new IntType(),"v"),
                 new CompoundStatement(new AssignStatement("v", new ValueExpression(new IntValue(2))),
                         new PrintStatement(new VariableExpression("v"))));
+
         controller.add(example1);
-        try {
-            this.controller.allStep();
-        }
-        catch (InterpreterException ie)
+
+        String option;
+
+        printStepMenu();
+        System.out.print("Your option: ");
+        option = scanner.next();
+
+        if (option.equals("a"))
         {
-            System.out.println(ie.getMessage());
+            try {
+                this.controller.allStep();
+            }
+            catch (InterpreterException | IOException ie)
+            {
+                System.out.println(ie.getMessage());
+            }
         }
+        else if (option.equals("b"))
+        {
+            try{
+                ProgramState programState = controller.getProgramState();
+                String option2 = "x";
+                while (option2.equals("x"))
+                {
+                    programState = controller.oneStep(programState);
+                    this.controller.displayProgramState(programState);
+                    System.out.println("Press 'x' to continue");
+                    option2 = scanner.next();
+
+                }
+                programState = controller.oneStep(programState);
+            }
+            catch (InterpreterException | IOException ie)
+            {
+                System.out.println(ie.getMessage());
+            }
+        }
+        else System.out.println("Invalid option! Try again.");
+
     }
 }

@@ -8,9 +8,9 @@ import Model.Values.Value;
 
 public class LogicExpression implements Expression{
     Expression expression1, expression2;
-    int operation; // 1 - and, 2 - or, 3 - not
+    String operation; // 1 - and, 2 - or, 3 - not
 
-    public LogicExpression(int operator,Expression expression1, Expression expression2) {
+    public LogicExpression(String operator,Expression expression1, Expression expression2) {
         this.expression1 = expression1;
         this.expression2 = expression2;
         this.operation = operator;
@@ -28,11 +28,11 @@ public class LogicExpression implements Expression{
                 BoolValue bool_value2 = (BoolValue) value2;
                 boolean boolean1 = bool_value1.getValue();
                 boolean boolean2 = bool_value2.getValue();
-                if (this.operation == 1)
+                if (this.operation.equals("and"))
                 {
                     return new BoolValue(boolean1 && boolean2);
                 }
-                if (this.operation == 2)
+                if (this.operation.equals("or"))
                 {
                     return new BoolValue(boolean1 || boolean2);
                 }
@@ -66,11 +66,11 @@ public class LogicExpression implements Expression{
         this.expression2 = expression2;
     }
 
-    public int getOperation() {
+    public String getOperation() {
         return operation;
     }
 
-    public void setOperation(int operator) {
+    public void setOperation(String operator) {
         this.operation = operator;
     }
 

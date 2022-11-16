@@ -5,15 +5,18 @@ import Model.Values.*;
 
 public class BoolType implements Type
 {
+
     public boolean equals(Object obj) {
-        if (obj instanceof BoolType) return true;
-        return false;
+        return obj instanceof BoolType;
     }
 
     @Override
     public String toString() {
         return "bool ";
     }
+
+
+
     @Override
     public Value default_value() {
         return new BoolValue(false);

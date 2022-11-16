@@ -21,6 +21,16 @@ public class StringValue implements Value{
     }
 
     @Override
+    public boolean equals(Value anotherValue) {
+        if (anotherValue.getType() instanceof StringType)
+        {
+            StringValue castObject = (StringValue) anotherValue;
+            return castObject.equals(castObject.getValue());
+        }
+        return false;
+    }
+
+    @Override
     public Type getType() {
         return new StringType();
     }
