@@ -2,6 +2,8 @@ import socket
 import struct
 import select
 
+# There should be more clients. If there is more than one client you need to open more terminals and connect with each client to the server from terminals
+
 clients = []
 nrClients = 1
 
