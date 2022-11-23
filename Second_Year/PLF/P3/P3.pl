@@ -69,3 +69,13 @@ allsolutions(N, M, R):-
     findall(RPart, solution(N, M, RPart), R).
 
 % findall( <rezultatu de la fct>, <functia + parametrii>, lista de liste finala)
+
+test_solution:-
+    diffAbs(0,0,0),
+    diffAbs(5,7,2),
+    diffAbs(65,32,33),
+    allsolutions(5,2,[[1,3],[1,4],[2,4]]),
+    allsolutions(0,0,[]),
+    allsolutions(6,3,[[1,4],[1,5],[2,5]]),
+    allsolutions(7,3,[[1, 4], [1, 5], [1, 6], [2, 5], [2, 6], [3, 6]]),
+    allsolutions(7,4,[[1, 5], [1, 6], [2, 6]]),!.

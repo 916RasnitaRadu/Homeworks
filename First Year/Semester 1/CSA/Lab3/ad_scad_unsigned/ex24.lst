@@ -1,0 +1,67 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit               ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  
+    11                                  ; our data is declared here (the variables needed by our program)
+    12                                  segment data use32 class=data
+    13                                      a db
+    13          ******************       warning: no operand for data declaration
+    14                                      b dw
+    14          ******************       warning: no operand for data declaration
+    15                                      c dd
+    15          ******************       warning: no operand for data declaration
+    16 00000000 7856341200000000            d dq 12345678h
+    17                                  
+    18                                  ; our code starts here
+    19                                  segment code use32 class=code
+    20                                      start:
+    21                                          ; ((a + b) + (a + c) + (b + c)) - d
+    22 00000000 B400                            mov ah,0
+    23 00000002 A0[00000000]                    mov al,[a]
+    24 00000007 660305[00000000]                add ax, [b]; AX = a + b
+    25 0000000E 6689C3                          mov bx,ax ; BX = a + b
+    26                                          
+    27 00000011 A0[00000000]                    mov al,[a]
+    28 00000016 B400                            mov ah,0
+    29 00000018 66BA0000                        mov dx,0
+    30                                          
+    31 0000001C 6652                            push dx
+    32 0000001E 6650                            push ax
+    33 00000020 58                              pop eax
+    34                                          
+    35 00000021 0305[00000000]                  add eax, [c] ; EAX = a + c
+    36 00000027 89C3                            mov ebx,eax ; EBX = a+c
+    37                                         
+    38 00000029 8B0D[00000000]                  mov ecx,[c]
+    39 0000002F 66A1[00000000]                  mov ax,[b]
+    40 00000035 66BA0000                        mov dx,0
+    41                                          
+    42 00000039 6652                            push dx
+    43 0000003B 6650                            push ax
+    44 0000003D 58                              pop eax
+    45                                          
+    46 0000003E 01C1                            add ecx,eax
+    47 00000040 01CB                            add ebx,ecx ; EBX = (a + c) + (b + c)
+    48                                          
+    49 00000042 6689D8                          mov ax,bx
+    50                                          mov dx
+    50          ******************       error: invalid combination of opcode and operands
+    51                                          
+    52 00000045 6652                            push dx
+    53 00000047 6650                            push ax
+    54 00000049 58                              pop eax
+    55                                          
+    56 0000004A 01D8                            add eax,ebx
+    57 0000004C 2B05[00000000]                  sub eax, dword[d+0]
+    58 00000052 BA00000000                      mov edx, 0
+    59 00000057 1B15[04000000]                  sbb edx, dword[d+4]
+    60                                          ; exit(0)
+    61 0000005D 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+    62 0000005F FF15[00000000]                  call    [exit]       ; call exit to terminate the program
+    63                                   

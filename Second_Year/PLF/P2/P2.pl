@@ -20,13 +20,13 @@
 %     }
 
 get_div(N,N,L,L):-!.
-get_div(N,_,L,L):- N =< 2, !. 
+get_div(N,_,L,L):- N =< 2, !.
 get_div(N,D,L,[D|R]):-
     N mod D =:= 0,
     !,
     D1 is D + 1,
     get_div(N,D1,L,R).
-get_div(N,D,L,R):- 
+get_div(N,D,L,R):-
     D1 is D+1,
     get_div(N,D1,L,R).
 
@@ -40,7 +40,7 @@ getDiv0(N,D,R,R):-
     \+ N mod D =:= 0.
 getDiv0(N,D,R,[D|R]):-
     N mod D =:= 0.
-    
+
 getDiv(_, 0, R, R):-!.
 getDiv(N, D, L, R):-
     getDiv0(N, D, L, R1),

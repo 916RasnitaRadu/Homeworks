@@ -1,41 +1,40 @@
 
-
 -- a. modify the type of a column;
 
-CREATE PROCEDURE setStartsAtFromAppliedDiscToVarChar AS
-	ALTER TABLE AppliedDiscount ALTER COLUMN starts_at VARCHAR(64)
+CREATE OR ALTER PROCEDURE setStartsAtFromAppliedDiscToVarChar AS
+	ALTER TABLE Applied_Discount ALTER COLUMN starts_at VARCHAR(64)
 GO
 
 -- reverse
-CREATE PROCEDURE setStartsAtFromAppliedDiscToVarDate AS
-	ALTER TABLE AppliedDiscount ALTER COLUMN starts_at DATE
+CREATE OR ALTER PROCEDURE setStartsAtFromAppliedDiscToVarDate AS
+	ALTER TABLE Applied_Discount ALTER COLUMN starts_at DATE
 GO
 
 -- b. add / remove a column;
 
-CREATE PROCEDURE addColumnCountryToAddress AS
+CREATE OR ALTER PROCEDURE addColumnCountryToAddress AS
 	ALTER TABLE Address_of_Client ADD country_name VARCHAR(100)
 GO
 
 -- reverse
-CREATE PROCEDURE dropColumnCountryToAddress AS
+CREATE OR ALTER PROCEDURE dropColumnCountryToAddress AS
 	ALTER TABLE Address_of_Client drop column country_name
 GO
 
 -- c. add / remove a DEFAULT constraint;
 
-CREATE PROCEDURE setActiveDiscountTo0 AS
+CREATE OR ALTER PROCEDURE setActiveDiscountTo0 AS
 	ALTER TABLE Discount ADD CONSTRAINT DEFAULT0 default(0) for active
 GO
 
 -- reverse
-CREATE PROCEDURE dropConstraintForActiveInDiscount AS
+CREATE OR ALTER PROCEDURE dropConstraintForActiveInDiscount AS
 	ALTER TABLE Discount DROP CONSTRAINT DEFAULT0
 GO
 
 -- g. create / drop a table.
 
-CREATE PROCEDURE createFeedbackTable AS
+CREATE OR ALTER PROCEDURE createFeedbackTable AS
 	CREATE TABLE Feedback(
 		id int not null,
 		rating float,
@@ -47,44 +46,45 @@ CREATE PROCEDURE createFeedbackTable AS
 GO
 
 -- reverse
-CREATE PROCEDURE dropTableFeedback AS
+CREATE OR ALTER PROCEDURE dropTableFeedback AS
 	DROP TABLE IF EXISTS Feedback
 GO
 
 -- d. add / remove a primary key;
-CREATE PROCEDURE addGotAtPrimaryKey AS
+CREATE OR ALTER PROCEDURE addGotAtPrimaryKey AS
 	ALTER TABLE Feedback DROP CONSTRAINT FEEDBACK_PRIMARY_KEY
 	ALTER TABLE Feedback ADD CONSTRAINT FEEDBACK_PRIMARY_KEY primary key(id, got_at)
 GO
 
 -- reverse
-CREATE PROCEDURE removeGotAtPrimaryKey AS
+CREATE OR ALTER PROCEDURE removeGotAtPrimaryKey AS
 	ALTER TABLE Feedback DROP CONSTRAINT FEEDBACK_PRIMARY_KEY
 	ALTER TABLE Feedback ADD CONSTRAINT FEEDBACK_PRIMARY_KEY primary key(id)
 GO
 
 -- e. add / remove a candidate key;
-CREATE PROCEDURE addCandidateKey AS
+CREATE OR ALTER PROCEDURE addCandidateKey AS
 	ALTER TABLE Feedback ADD CONSTRAINT FEEDBACK_CANDIDATE_KEY unique (id, got_at, order_id)
 GO
 
 -- reverse
-CREATE PROCEDURE removeCandidateKey AS
+CREATE OR ALTER PROCEDURE removeCandidateKey AS
 	ALTER TABLE Feedback DROP CONSTRAINT FEEDBACK_CANDIDATE_KEY
 GO
 
 --f. add / remove a foreign key;
-CREATE PROCEDURE addOrderIdAsFK AS
+CREATE OR ALTER PROCEDURE addOrderIdAsFK AS
 	ALTER TABLE Feedback ADD CONSTRAINT FEEDBACK_FOREIGN_KEY foreign key(order_id) REFERENCES Orders(id)
 GO
 
 -- reverse
-CREATE PROCEDURE removeOrderIdAsFK AS
+CREATE OR ALTER PROCEDURE removeOrderIdAsFK AS
 	ALTER TABLE Feedback DROP CONSTRAINT FEEDBACK_FOREIGN_KEY
 GO
 
 -- Create a new table that holds the current version of the database schema. Simplifying assumption: the version is an integer number.
 
+DROP TABLE IF EXISTS versionTable
 CREATE TABLE versionTable( versiune int)
 
 INSERT INTO versionTable values(1)
@@ -93,6 +93,7 @@ GO
 
 -- first we create a procedures table where we will insert all the procedures yay :/
 
+DROP TABLE IF EXISTS proceduresTable
 CREATE TABLE proceduresTable(
 	from_version int,
 	to_version int,
@@ -120,7 +121,7 @@ GO
 
 -- creating procedure
 
-CREATE PROCEDURE go_to_version(@wantedVersion int) AS
+CREATE OR ALTER PROCEDURE go_to_version(@wantedVersion int) AS
 	BEGIN
 		DECLARE @currentVersion int
 		select @currentVersion=versiune from versionTable
@@ -153,3 +154,5 @@ CREATE PROCEDURE go_to_version(@wantedVersion int) AS
 GO
 
 execute go_to_version 1
+
+select versiune from versionTable
