@@ -1,0 +1,35 @@
+Confidence intervals
+
+X - random variable / characteristic of a population
+X has a probability density function (pdf) denoted by fX(x, theta)    [theta - unknown parameter to estimate as accurately as possible]
+
+So the goal is to estimate theta.
+Make a selection of volum n => Obtain X1,..., Xn selection variables
+that are independent and identically distributed with X (i.e. X1, ..., Xn have the same pdf as X)
+
+Methods:
+1. Use a selection function.
+theta_  (cu bara deasupra) = theta_  (X1, ..., Xn)
+
+2. find thetaL_, thetaM_ (cu bara deasupra ambele) such that P(thetaL_ < theta < thetaM_) = 1 - alfa
+
+Terminology:
+1 - alpha = confidence level (coeff)
+alpha = significance level 
+
+Usually 0 <= 1 - alpha <= 1but we take values betw 0.95-0.99
+
+
+x = vector of data / sample
+n = sample size = length(x)
+niu = population mean (theoretical mean)
+x_ = sample mean ( mean(x) in Octave)
+sigma^2 = population variance
+s^2 = sample variance ( var(x) in Octave)
+sigma = population standard deviation
+s = sample standard deviation
+
+Quantiles:
+Zalpha = quantile of order alpha of the N(0,1)
+
+norminv(...)
