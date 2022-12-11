@@ -1,11 +1,8 @@
-package Model.Statements;
+package model.statements;
 
-import Model.ProgramState.ProgramState;
-import Exceptions.InterpreterException;
-import Model.ADTs.IDictionary;
-import Model.Types.Type;
+import model.programState.ProgramState;
+import exceptions.InterpreterException;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public interface IStatement {

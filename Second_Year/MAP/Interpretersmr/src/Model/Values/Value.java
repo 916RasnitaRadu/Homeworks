@@ -1,6 +1,6 @@
-package Model.Values;
+package model.values;
 
-import Model.Types.Type;
+import model.types.Type;
 
 public interface Value {
     boolean equals(Value anotherValue);

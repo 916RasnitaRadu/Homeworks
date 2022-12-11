@@ -1,6 +1,6 @@
-package Model.ADTs;
+package model.adts;
 
-import Exceptions.InterpreterException;
+import exceptions.InterpreterException;
 
 import java.util.function.Consumer;
 import java.util.List;

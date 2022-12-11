@@ -1,7 +1,7 @@
-package Model.Types;
+package model.types;
 
 
-import Model.Values.*;
+import model.values.*;
 
 public class BoolType implements Type
 {

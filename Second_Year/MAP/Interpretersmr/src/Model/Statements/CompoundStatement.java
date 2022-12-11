@@ -1,8 +1,8 @@
-package Model.Statements;
+package model.statements;
 
-import Exceptions.InterpreterException;
-import Model.ADTs.IStack;
-import Model.ProgramState.ProgramState;
+import exceptions.InterpreterException;
+import model.adts.IStack;
+import model.programState.ProgramState;
 
 public class CompoundStatement implements IStatement {
     private IStatement statement1;
@@ -19,7 +19,7 @@ public class CompoundStatement implements IStatement {
         IStack<IStatement> stack = state.getExecutionStack();
         stack.push(statement2);
         stack.push(statement1);
-        return state;
+        return null;
     }
 
     @Override

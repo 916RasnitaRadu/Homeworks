@@ -1,7 +1,7 @@
-package Model.Statements;
+package model.statements;
 
-import Exceptions.InterpreterException;
-import Model.ProgramState.ProgramState;
+import exceptions.InterpreterException;
+import model.programState.ProgramState;
 
 public class NoOperationStatement implements IStatement{
 

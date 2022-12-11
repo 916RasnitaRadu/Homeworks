@@ -1,10 +1,11 @@
-package Model.Expressions;
+package model.expressions;
 
-import Exceptions.InterpreterException;
-import Model.ADTs.IDictionary;
-import Model.Types.IntType;
-import Model.Values.IntValue;
-import Model.Values.Value;
+import exceptions.InterpreterException;
+import model.adts.IDictionary;
+import model.adts.IHeap;
+import model.types.IntType;
+import model.values.IntValue;
+import model.values.Value;
 
 public class ArithmeticExpression implements Expression{
     private Expression expression1, expression2; //
@@ -17,11 +18,11 @@ public class ArithmeticExpression implements Expression{
     }
 
     @Override
-    public Value eval(IDictionary<String, Value> table) throws InterpreterException {
+    public Value eval(IDictionary<String, Value> table, IHeap<Value> heap) throws InterpreterException {
         Value value1 = null, value2 = null;
-        value1 = expression1.eval(table);
+        value1 = expression1.eval(table, heap);
         if (value1.getType().equals(new IntType())) {
-            value2 = expression2.eval(table);
+            value2 = expression2.eval(table, heap);
             if (value2.getType().equals(new IntType())) {
                 IntValue integer1 = (IntValue) value1;
                 IntValue integer2 = (IntValue) value2;

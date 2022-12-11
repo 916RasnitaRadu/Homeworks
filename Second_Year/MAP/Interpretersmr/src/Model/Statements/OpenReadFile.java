@@ -1,11 +1,11 @@
-package Model.Statements;
+package model.statements;
 
-import Exceptions.InterpreterException;
-import Model.Expressions.Expression;
-import Model.ProgramState.ProgramState;
-import Model.Types.StringType;
-import Model.Values.StringValue;
-import Model.Values.Value;
+import exceptions.InterpreterException;
+import model.expressions.Expression;
+import model.programState.ProgramState;
+import model.types.StringType;
+import model.values.StringValue;
+import model.values.Value;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -20,7 +20,7 @@ public class OpenReadFile implements IStatement{
 
     @Override
     public ProgramState execute(ProgramState state) throws InterpreterException, FileNotFoundException {
-        Value expressionValue = expression.eval(state.getSymbolTable());
+        Value expressionValue = expression.eval(state.getSymbolTable(), state.getHeap());
         if (expressionValue.getType().equals(new StringType()))
         {
             StringValue toStr = (StringValue) expressionValue;
@@ -30,7 +30,7 @@ public class OpenReadFile implements IStatement{
             {
                 BufferedReader fileDescriptor = new BufferedReader(new FileReader(key));
                 state.getFileTable().put(key, fileDescriptor);
-                return state;
+                return null;
             }
             else throw new InterpreterException("ERROR: The filename already exists!");
         }

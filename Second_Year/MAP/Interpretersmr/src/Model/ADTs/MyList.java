@@ -1,7 +1,7 @@
-package Model.ADTs;
+package model.adts;
 
 
-import Exceptions.InterpreterException;
+import exceptions.InterpreterException;
 
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -23,50 +23,68 @@ public class MyList<T> implements IList<T> {
 
     @Override
     public Iterator<T> iterator() {
-        return list.iterator();
+        synchronized (list) {
+            return list.iterator();
+        }
     }
 
 
     @Override
     public void add(T element) {
-        list.add(element);
+        synchronized (list) {
+            list.add(element);
+        }
     }
 
     @Override
     public T pop() throws InterpreterException {
-        if (this.list.size() == 0) {throw new InterpreterException("LIST ERROR: List is empty");}
-        T result = list.get(0);
-        list.remove(0);
-        return result;
+        synchronized (list) {
+            if (this.list.size() == 0) {throw new InterpreterException("LIST ERROR: List is empty");}
+            T result = list.get(0);
+            list.remove(0);
+            return result;
+        }
     }
 
     @Override
     public boolean isEmpty() {
-        return list.isEmpty();
+        synchronized (list) {
+            return list.isEmpty();
+        }
     }
 
     @Override
     public void forEach(Consumer<? super T> action) {
-        list.forEach(action);
+        synchronized (list) {
+            list.forEach(action);
+        }
     }
 
     @Override
     public List<T> getList() {
-        return list;
+        synchronized (list) {
+            return list;
+        }
     }
 
     @Override
     public void setList(List<T> list) {
-        this.list = list;
+        synchronized (list) {
+            this.list = list;
+        }
     }
 
     @Override
     public int getSize() {
-        return list.size();
+        synchronized (list) {
+            return list.size();
+        }
     }
 
     @Override
     public T get(int i) {
-        return this.list.get(i);
+        synchronized (list) {
+            return this.list.get(i);
+        }
     }
 }

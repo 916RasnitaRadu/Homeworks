@@ -1,7 +1,7 @@
-package Model.Types;
+package model.types;
 
-import Model.Values.StringValue;
-import Model.Values.*;
+import model.values.StringValue;
+import model.values.*;
 
 public class StringType implements Type{
     public boolean equals(Object obj) {

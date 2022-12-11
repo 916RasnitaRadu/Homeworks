@@ -1,6 +1,6 @@
-package Model.Types;
+package model.types;
 
-import Model.Values.IntValue;
+import model.values.IntValue;
 
 public class IntType implements Type{
     public boolean equals(Object second)

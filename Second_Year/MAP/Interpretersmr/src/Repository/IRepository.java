@@ -1,16 +1,19 @@
-package Repository;
+package repository;
 
-import Exceptions.InterpreterException;
-import Model.ProgramState.ProgramState;
+import exceptions.InterpreterException;
+import model.programState.ProgramState;
 
-import java.io.IOException;
 import java.util.List;
+import java.io.IOException;
 
 public interface IRepository {
-    void setCurrentProgram(ProgramState currentProgram);
+    void setProgramList(List<ProgramState> programStates);
 
-    ProgramState getCurrentProgram();
+    List<ProgramState> getProgramList();
 
     void logProgramStateExecution(ProgramState programState) throws InterpreterException, IOException;
 
+    ProgramState getProgramWithId(Integer id);
+
+    void addProgram(ProgramState newProgram);
 }

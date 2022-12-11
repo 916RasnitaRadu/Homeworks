@@ -1,12 +1,13 @@
-package Model.Statements;
+package model.statements;
 
-import Exceptions.InterpreterException;
-import Model.ADTs.IDictionary;
-import Model.Expressions.Expression;
-import Model.ProgramState.ProgramState;
-import Model.Types.BoolType;
-import Model.Values.BoolValue;
-import Model.Values.Value;
+import exceptions.InterpreterException;
+import model.adts.IDictionary;
+import model.adts.IHeap;
+import model.expressions.Expression;
+import model.programState.ProgramState;
+import model.types.BoolType;
+import model.values.BoolValue;
+import model.values.Value;
 
 public class IfStatement implements IStatement{
     private Expression expression;
@@ -22,8 +23,8 @@ public class IfStatement implements IStatement{
     @Override
     public ProgramState execute(ProgramState state) throws InterpreterException {
         IDictionary<String, Value> symTable = state.getSymbolTable();
-
-        Value value = expression.eval(symTable);
+        IHeap<Value> heap = state.getHeap();
+        Value value = expression.eval(symTable, heap);
         if (value.getType().equals(new BoolType()))
         {
             BoolValue condition_result = (BoolValue)value;
@@ -34,7 +35,7 @@ public class IfStatement implements IStatement{
             else {
                 state.getExecutionStack().push(elseStatement);
             }
-            return state;
+            return null;
         }
         throw new InterpreterException(String.format("ERROR: %s is not of boolean type inside the if statement", value.toString()));
     }

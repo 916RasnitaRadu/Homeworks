@@ -1,7 +1,7 @@
-package View;
+package view;
 
-import Controller.Controller;
-import Exceptions.InterpreterException;
+import controller.Controller;
+import exceptions.InterpreterException;
 
 import java.io.IOException;
 
@@ -17,7 +17,7 @@ public class RunExample extends Command{
     public void execute() {
         try {
             controller.allStep();
-        } catch (InterpreterException | IOException ie) {
+        } catch (InterpreterException | IOException | InterruptedException ie) {
             System.out.println(ie.getMessage());
         }
     }

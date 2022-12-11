@@ -1,7 +1,7 @@
-package Model.Values;
+package model.values;
 
-import Model.Types.StringType;
-import Model.Types.Type;
+import model.types.StringType;
+import model.types.Type;
 
 public class StringValue implements Value{
     private String value;

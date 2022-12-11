@@ -1,6 +1,6 @@
-package Model.Values;
+package model.values;
 
-import Model.Types.*;
+import model.types.*;
 
 public class ReferenceValue implements Value{
     protected int address;

@@ -1,8 +1,9 @@
-package Model.Expressions;
+package model.expressions;
 
-import Exceptions.InterpreterException;
-import Model.ADTs.IDictionary;
-import Model.Values.Value;
+import exceptions.InterpreterException;
+import model.adts.IDictionary;
+import model.adts.IHeap;
+import model.values.Value;
 
 public class VariableExpression implements Expression {
     private String key;
@@ -12,7 +13,7 @@ public class VariableExpression implements Expression {
     }
 
     @Override
-    public Value eval(IDictionary<String, Value> table) throws InterpreterException {
+    public Value eval(IDictionary<String, Value> table, IHeap<Value> heap) throws InterpreterException {
         return table.get(key);
     }
 

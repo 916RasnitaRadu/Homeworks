@@ -1,24 +1,31 @@
-package Model.ProgramState;
+package model.programState;
 
-import Exceptions.InterpreterException;
-import Model.ADTs.*;
-import Model.Statements.IStatement;
-import Model.Values.Value;
+import exceptions.InterpreterException;
+import model.adts.*;
+import model.statements.IStatement;
+import model.values.Value;
 
 import java.io.BufferedReader;
+import java.io.IOException;
+import java.util.Random;
+import java.util.TreeSet;
 
 public class ProgramState {
     private IStack<IStatement> executionStack;
     private IDictionary<String, Value> symbolTable;
     private IDictionary<String, BufferedReader> fileTable;
     private IList<Value> output;
-    private IStatement statement;
+    private IHeap<Value> heap;
+    private static final TreeSet<Integer> ids = new TreeSet<>();
+    public final Integer id;
 
-    public ProgramState(IStack<IStatement> executionStack, IDictionary<String, Value> symbolTable, IList<Value> output, IDictionary<String, BufferedReader> fileTable) {
+    public ProgramState(IStack<IStatement> executionStack, IDictionary<String, Value> symbolTable, IList<Value> output, IDictionary<String, BufferedReader> fileTable, IHeap<Value> heap) {
         this.executionStack = executionStack;
         this.symbolTable = symbolTable;
         this.output = output;
         this.fileTable = fileTable;
+        this.heap = heap;
+        id = newId();
     }
 
     public ProgramState(IStatement originalProgram) {
@@ -26,20 +33,39 @@ public class ProgramState {
         symbolTable = new MyDictionary<>();
         output = new MyList<>();
         fileTable = new MyDictionary<>();
+        heap = new MyHeap<>();
         executionStack.push(originalProgram);
+        id = newId();
     }
 
-    public ProgramState(IStack<IStatement> executionStack, IDictionary<String, Value> symbolTable, IList<Value> output, IStatement statement) {
-        this.executionStack = executionStack;
-        this.symbolTable = symbolTable;
-        this.output = output;
-        this.statement = statement.deepCopy();
-        this.executionStack.push(this.statement);
+    private static Integer newId()
+    {
+        Random random = new Random();
+        Integer id;
+        synchronized (ids)
+        {
+            do
+            {
+                id = random.nextInt() % 100 + 1;
+            } while (ids.contains(id));
+            ids.add(id);
+        }
+        return id;
     }
 
     public boolean isCompleted() {
         return executionStack.isEmpty(); // verifies if the program is completed aka the execution stack is empty
     }
+
+    public ProgramState oneStep() throws InterpreterException, IOException {
+
+        if (executionStack.isEmpty()) {
+            throw new InterpreterException("ERROR: Program State stack is empty.");
+        }
+        IStatement currentStatement = executionStack.pop();
+        return currentStatement.execute(this);
+    }
+
 
     public String outToString() {
         StringBuilder outputStringBuilder = new StringBuilder();
@@ -71,10 +97,11 @@ public class ProgramState {
         return executionStack.toString();
     }
 
+    public String HeapToString() { return heap.toString();}
 
-    public IStack<IStatement> getExecutionStack() {
-        return executionStack;
-    }
+    public Integer getId() { return this.id;}
+
+    public IStack<IStatement> getExecutionStack() { return executionStack;}
 
     public void setExecutionStack(IStack<IStatement> executionStack) {
         this.executionStack = executionStack;
@@ -87,6 +114,10 @@ public class ProgramState {
     public void setSymbolTable(IDictionary<String, Value> symbolTable) {
         this.symbolTable = symbolTable;
     }
+
+    public IHeap<Value> getHeap() { return heap;}
+
+    public void setHeap(IHeap<Value> newHeap) { this.heap = newHeap;}
 
     public IList<Value> getOutput() {
         return output;
@@ -106,11 +137,13 @@ public class ProgramState {
 
     @Override
     public String toString() {
-        return String.format("======EXE_STACK======\n%s\n======SYM_TABLE======\n%s======OUT======\n%s======FILE_TABLE======\n%s",
+        return String.format("======ID======\n%d\n======EXE_STACK======\n%s\n======SYM_TABLE======\n%s======OUT======\n%s======FILE_TABLE======\n%s======HEAP======\n%s",
+                this.id,
                 exeStackToString(),
                 symbolTableToString(),
                 outToString(),
-                fileTableToString()
+                fileTableToString(),
+                HeapToString()
         );
     }
 

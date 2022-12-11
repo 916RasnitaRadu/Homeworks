@@ -1,12 +1,13 @@
-package Model.Statements;
+package model.statements;
 
-import Exceptions.InterpreterException;
-import Model.ADTs.IDictionary;
-import Model.ADTs.IStack;
-import Model.Expressions.Expression;
-import Model.ProgramState.ProgramState;
-import Model.Values.Value;
-import Model.Types.Type;
+import exceptions.InterpreterException;
+import model.adts.IDictionary;
+import model.adts.IHeap;
+import model.adts.IStack;
+import model.expressions.Expression;
+import model.programState.ProgramState;
+import model.values.Value;
+import model.types.Type;
 
 public class AssignStatement implements IStatement{
     private String key;
@@ -21,9 +22,9 @@ public class AssignStatement implements IStatement{
     public ProgramState execute(ProgramState state) throws InterpreterException {
         IStack<IStatement> exeStack = state.getExecutionStack();
         IDictionary<String, Value> symTable = state.getSymbolTable();
-
+        IHeap<Value> heap = state.getHeap();
         if (symTable.contains_key(key)) {
-            Value value = expression.eval(symTable);
+            Value value = expression.eval(symTable, heap);
             Type type = symTable.get(key).getType();
             if (value.getType().equals(type))
             {
@@ -32,7 +33,7 @@ public class AssignStatement implements IStatement{
             else throw new InterpreterException(String.format("ERROR: %s is not compatible with %s", value.toString(), type.toString()));
         }
         else throw new InterpreterException("The used variable " + key + " was not declared before.");
-        return state;
+        return null;
     }
 
     @Override

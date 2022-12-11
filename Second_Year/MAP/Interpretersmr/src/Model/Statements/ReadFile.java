@@ -1,11 +1,11 @@
-package Model.Statements;
+package model.statements;
 
-import Exceptions.InterpreterException;
-import Model.Expressions.Expression;
-import Model.ProgramState.ProgramState;
-import Model.Types.IntType;
-import Model.Types.StringType;
-import Model.Values.*;
+import exceptions.InterpreterException;
+import model.expressions.Expression;
+import model.programState.ProgramState;
+import model.types.IntType;
+import model.types.StringType;
+import model.values.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 
@@ -24,7 +24,7 @@ public class ReadFile implements IStatement{
         {
             if (state.getSymbolTable().get(variableName).getType().equals(new IntType()))
             {
-                Value value = expression.eval(state.getSymbolTable());
+                Value value = expression.eval(state.getSymbolTable(), state.getHeap());
                 if (value.getType().equals(new StringType()))
                 {
                     StringValue toStr = (StringValue) value;
@@ -40,7 +40,7 @@ public class ReadFile implements IStatement{
                         else { readedValue = new IntValue(Integer.parseInt(line));}
 
                         state.getSymbolTable().put(variableName, readedValue);
-                        return state;
+                        return null;
                     }
                     else throw new InterpreterException("ERROR: The string value is not a key in the FileTable");
                 }

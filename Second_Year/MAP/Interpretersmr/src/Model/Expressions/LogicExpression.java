@@ -1,10 +1,11 @@
-package Model.Expressions;
+package model.expressions;
 
-import Exceptions.InterpreterException;
-import Model.ADTs.IDictionary;
-import Model.Types.BoolType;
-import Model.Values.BoolValue;
-import Model.Values.Value;
+import exceptions.InterpreterException;
+import model.adts.IDictionary;
+import model.adts.IHeap;
+import model.types.BoolType;
+import model.values.BoolValue;
+import model.values.Value;
 
 public class LogicExpression implements Expression{
     Expression expression1, expression2;
@@ -17,11 +18,11 @@ public class LogicExpression implements Expression{
     }
 
     @Override
-    public Value eval(IDictionary<String, Value> table) throws InterpreterException {
+    public Value eval(IDictionary<String, Value> table, IHeap<Value> heap) throws InterpreterException {
         Value value1 = null, value2 = null;
-        value1 = expression1.eval(table);
+        value1 = expression1.eval(table, heap);
         if (value1.getType().equals(new BoolType())) {
-            value2 = expression2.eval(table);
+            value2 = expression2.eval(table, heap);
             if (value2.getType().equals(new BoolType()))
             {
                 BoolValue bool_value1 = (BoolValue) value1;

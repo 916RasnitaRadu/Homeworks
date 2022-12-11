@@ -1,10 +1,10 @@
-package Model.Statements;
+package model.statements;
 
-import Exceptions.InterpreterException;
-import Model.ADTs.IDictionary;
-import Model.ProgramState.ProgramState;
-import Model.Types.Type;
-import Model.Values.Value;
+import exceptions.InterpreterException;
+import model.adts.IDictionary;
+import model.programState.ProgramState;
+import model.types.Type;
+import model.values.Value;
 
 public class DeclarationStatement implements IStatement{
     private Type type;
@@ -23,7 +23,7 @@ public class DeclarationStatement implements IStatement{
             throw new InterpreterException("ERROR: The variable " + var_name + " was already declared.");
         }
         symTable.put(var_name,type.default_value());
-        return state;
+        return null;
     }
 
     @Override

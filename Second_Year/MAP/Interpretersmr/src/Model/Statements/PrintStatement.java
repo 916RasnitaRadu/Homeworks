@@ -1,8 +1,8 @@
-package Model.Statements;
+package model.statements;
 
-import Exceptions.InterpreterException;
-import Model.Expressions.Expression;
-import Model.ProgramState.ProgramState;
+import exceptions.InterpreterException;
+import model.expressions.Expression;
+import model.programState.ProgramState;
 
 public class PrintStatement implements IStatement{
     private Expression expression;
@@ -14,9 +14,9 @@ public class PrintStatement implements IStatement{
     @Override
     public ProgramState execute(ProgramState state) throws InterpreterException {
         state.getOutput().add(
-                expression.eval(state.getSymbolTable())
+                expression.eval(state.getSymbolTable(), state.getHeap())
         );
-        return state;
+        return null;
     }
 
     @Override

@@ -1,29 +1,31 @@
-package Repository;
+package repository;
 
-import Exceptions.InterpreterException;
-import Model.ProgramState.ProgramState;
+import exceptions.InterpreterException;
+import model.programState.ProgramState;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-
+import java.util.ArrayList;
+import java.util.List;
 public class Repository implements IRepository {
-    private ProgramState currentProgram;
+    private List<ProgramState> programStates;
     private final String logFilePath;
 
     public Repository(String logFilePath) {
+        this.programStates = new ArrayList<>();
         this.logFilePath = logFilePath;
     }
 
     @Override
-    public void setCurrentProgram(ProgramState currentProgram) {
-        this.currentProgram = currentProgram;
+    public void setProgramList(List<ProgramState> programStates) {
+        this.programStates = programStates;
     }
 
     @Override
-    public ProgramState getCurrentProgram() {
-        return this.currentProgram;
+    public List<ProgramState> getProgramList() {
+        return programStates;
     }
 
     @Override
@@ -34,4 +36,17 @@ public class Repository implements IRepository {
         logFile.close();
     }
 
+    @Override
+    public ProgramState getProgramWithId(Integer id) {
+        for (ProgramState p : this.programStates)
+        {
+            if (p.getId() == id) return p;
+        }
+        return null;
+    }
+
+    @Override
+    public void addProgram(ProgramState newProgram) {
+        programStates.add(newProgram);
+    }
 }

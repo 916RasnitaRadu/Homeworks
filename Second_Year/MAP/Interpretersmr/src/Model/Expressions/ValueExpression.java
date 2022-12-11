@@ -1,8 +1,9 @@
-package Model.Expressions;
+package model.expressions;
 
-import Exceptions.InterpreterException;
-import Model.ADTs.IDictionary;
-import Model.Values.Value;
+import exceptions.InterpreterException;
+import model.adts.IDictionary;
+import model.adts.IHeap;
+import model.values.Value;
 
 public class ValueExpression implements Expression {
     private Value value;
@@ -20,7 +21,7 @@ public class ValueExpression implements Expression {
     }
 
     @Override
-    public Value eval(IDictionary<String, Value> table) throws InterpreterException {
+    public Value eval(IDictionary<String, Value> table, IHeap<Value> heap) throws InterpreterException {
         return value;
     }
 

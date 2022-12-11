@@ -1,7 +1,7 @@
-package Model.Types;
+package model.types;
 
-import Model.Values.ReferenceValue;
-import Model.Values.Value;
+import model.values.ReferenceValue;
+import model.values.Value;
 
 public class ReferenceType implements Type{
     protected Type inner;

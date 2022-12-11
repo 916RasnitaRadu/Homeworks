@@ -1,4 +1,4 @@
-package Model.ADTs;
+package model.adts;
 
 import java.util.Set;
 import java.util.Map;
