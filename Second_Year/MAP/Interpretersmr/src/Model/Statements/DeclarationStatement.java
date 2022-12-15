@@ -27,6 +27,12 @@ public class DeclarationStatement implements IStatement{
     }
 
     @Override
+    public IDictionary<String, Type> typeCheck(IDictionary<String, Type> typeTable) throws InterpreterException {
+        typeTable.put(var_name,type);
+        return typeTable;
+    }
+
+    @Override
     public IStatement deepCopy() {
         return new DeclarationStatement(type.clone(), var_name);
     }

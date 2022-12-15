@@ -4,6 +4,7 @@ import exceptions.InterpreterException;
 import model.adts.IDictionary;
 import model.adts.IHeap;
 import model.types.BoolType;
+import model.types.Type;
 import model.values.BoolValue;
 import model.values.Value;
 
@@ -44,6 +45,17 @@ public class LogicExpression implements Expression{
         }
 
         throw new InterpreterException("ERROR: first operand is not a logic operand");
+    }
+
+    @Override
+    public Type typeCheck(IDictionary<String, Type> typeEnv) throws InterpreterException {
+        Type type1, type2;
+        type1 = expression1.typeCheck(typeEnv);
+        type2 = expression2.typeCheck(typeEnv);
+        if (!type1.equals(new BoolType())) throw new InterpreterException("ERROR: First operand is not a boolean.");
+        if (!type2.equals(new BoolType())) throw new InterpreterException("ERROR: Second operand is not a boolean.");
+
+        return new BoolType();
     }
 
     @Override

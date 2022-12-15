@@ -1,9 +1,11 @@
 package model.statements;
 
 import exceptions.InterpreterException;
+import model.adts.IDictionary;
 import model.adts.IStack;
 import model.adts.MyStack;
 import model.programState.ProgramState;
+import model.types.Type;
 
 import java.io.IOException;
 
@@ -23,6 +25,12 @@ public class ForkStatement implements IStatement{
         IStack<IStatement> newExecutionStack = new MyStack<>();
         newExecutionStack.push(statement);
         return new ProgramState(newExecutionStack, state.getSymbolTable().copy(),state.getOutput(), state.getFileTable(), state.getHeap());
+    }
+
+    @Override
+    public IDictionary<String, Type> typeCheck(IDictionary<String, Type> typeTable) throws InterpreterException {
+        statement.typeCheck(typeTable.copy());
+        return typeTable;
     }
 
     @Override

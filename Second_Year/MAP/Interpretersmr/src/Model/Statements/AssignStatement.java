@@ -37,6 +37,14 @@ public class AssignStatement implements IStatement{
     }
 
     @Override
+    public IDictionary<String, Type> typeCheck(IDictionary<String, Type> typeTable) throws InterpreterException {
+        Type typeVariable = typeTable.get(key);
+        Type typeExpression = expression.typeCheck(typeTable);
+        if (typeVariable.equals(typeExpression)) return typeTable;
+        else throw new InterpreterException("ERROR: Assignment right hand side and left hand side have different types.");
+    }
+
+    @Override
     public IStatement deepCopy() {
         return new AssignStatement(key, expression.deepCopy());
     }

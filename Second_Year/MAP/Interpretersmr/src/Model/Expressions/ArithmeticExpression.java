@@ -4,6 +4,7 @@ import exceptions.InterpreterException;
 import model.adts.IDictionary;
 import model.adts.IHeap;
 import model.types.IntType;
+import model.types.Type;
 import model.values.IntValue;
 import model.values.Value;
 
@@ -47,6 +48,17 @@ public class ArithmeticExpression implements Expression{
             }
         }
         throw new InterpreterException("ERROR: first operand is not an integer");
+    }
+
+    @Override
+    public Type typeCheck(IDictionary<String, Type> typeEnv) throws InterpreterException {
+        Type type1, type2;
+        type1 = expression1.typeCheck(typeEnv);
+        type2 = expression2.typeCheck(typeEnv);
+        if (!type1.equals(new IntType())) throw new InterpreterException("ERROR: First operand is not an integer.");
+        if (!type2.equals(new IntType())) throw new InterpreterException("ERROR: Second operand is not an integer.");
+
+        return new IntType();
     }
 
     @Override

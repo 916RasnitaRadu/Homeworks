@@ -1,0 +1,214 @@
+======ID======
+-51
+======EXE_STACK======
+{DeclarationStatement{a : int }; DeclarationStatement{b : int }; a = ArithmeticExpression{expression1=ValueExpression(2), expression2=ArithmeticExpression{expression1=ValueExpression(3), expression2=ValueExpression(5), operation=*}, operation=+}; b = ArithmeticExpression{expression1=VariableExpression(a), expression2=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(1), operation=+}, operation=+}; Print{VariableExpression(b)}
+}
+======SYM_TABLE======
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-51
+======EXE_STACK======
+{DeclarationStatement{b : int }; a = ArithmeticExpression{expression1=ValueExpression(2), expression2=ArithmeticExpression{expression1=ValueExpression(3), expression2=ValueExpression(5), operation=*}, operation=+}; b = ArithmeticExpression{expression1=VariableExpression(a), expression2=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(1), operation=+}, operation=+}; Print{VariableExpression(b)}
+DeclarationStatement{a : int }
+}
+======SYM_TABLE======
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-51
+======EXE_STACK======
+{DeclarationStatement{b : int }; a = ArithmeticExpression{expression1=ValueExpression(2), expression2=ArithmeticExpression{expression1=ValueExpression(3), expression2=ValueExpression(5), operation=*}, operation=+}; b = ArithmeticExpression{expression1=VariableExpression(a), expression2=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(1), operation=+}, operation=+}; Print{VariableExpression(b)}
+DeclarationStatement{a : int }
+}
+======SYM_TABLE======
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-51
+======EXE_STACK======
+{DeclarationStatement{b : int }; a = ArithmeticExpression{expression1=ValueExpression(2), expression2=ArithmeticExpression{expression1=ValueExpression(3), expression2=ValueExpression(5), operation=*}, operation=+}; b = ArithmeticExpression{expression1=VariableExpression(a), expression2=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(1), operation=+}, operation=+}; Print{VariableExpression(b)}
+}
+======SYM_TABLE======
+a : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-51
+======EXE_STACK======
+{DeclarationStatement{b : int }; a = ArithmeticExpression{expression1=ValueExpression(2), expression2=ArithmeticExpression{expression1=ValueExpression(3), expression2=ValueExpression(5), operation=*}, operation=+}; b = ArithmeticExpression{expression1=VariableExpression(a), expression2=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(1), operation=+}, operation=+}; Print{VariableExpression(b)}
+}
+======SYM_TABLE======
+a : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-51
+======EXE_STACK======
+{a = ArithmeticExpression{expression1=ValueExpression(2), expression2=ArithmeticExpression{expression1=ValueExpression(3), expression2=ValueExpression(5), operation=*}, operation=+}; b = ArithmeticExpression{expression1=VariableExpression(a), expression2=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(1), operation=+}, operation=+}; Print{VariableExpression(b)}
+DeclarationStatement{b : int }
+}
+======SYM_TABLE======
+a : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-51
+======EXE_STACK======
+{a = ArithmeticExpression{expression1=ValueExpression(2), expression2=ArithmeticExpression{expression1=ValueExpression(3), expression2=ValueExpression(5), operation=*}, operation=+}; b = ArithmeticExpression{expression1=VariableExpression(a), expression2=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(1), operation=+}, operation=+}; Print{VariableExpression(b)}
+DeclarationStatement{b : int }
+}
+======SYM_TABLE======
+a : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-51
+======EXE_STACK======
+{a = ArithmeticExpression{expression1=ValueExpression(2), expression2=ArithmeticExpression{expression1=ValueExpression(3), expression2=ValueExpression(5), operation=*}, operation=+}; b = ArithmeticExpression{expression1=VariableExpression(a), expression2=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(1), operation=+}, operation=+}; Print{VariableExpression(b)}
+}
+======SYM_TABLE======
+a : 0
+b : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-51
+======EXE_STACK======
+{a = ArithmeticExpression{expression1=ValueExpression(2), expression2=ArithmeticExpression{expression1=ValueExpression(3), expression2=ValueExpression(5), operation=*}, operation=+}; b = ArithmeticExpression{expression1=VariableExpression(a), expression2=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(1), operation=+}, operation=+}; Print{VariableExpression(b)}
+}
+======SYM_TABLE======
+a : 0
+b : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-51
+======EXE_STACK======
+{b = ArithmeticExpression{expression1=VariableExpression(a), expression2=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(1), operation=+}, operation=+}; Print{VariableExpression(b)}
+a = ArithmeticExpression{expression1=ValueExpression(2), expression2=ArithmeticExpression{expression1=ValueExpression(3), expression2=ValueExpression(5), operation=*}, operation=+}
+}
+======SYM_TABLE======
+a : 0
+b : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-51
+======EXE_STACK======
+{b = ArithmeticExpression{expression1=VariableExpression(a), expression2=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(1), operation=+}, operation=+}; Print{VariableExpression(b)}
+a = ArithmeticExpression{expression1=ValueExpression(2), expression2=ArithmeticExpression{expression1=ValueExpression(3), expression2=ValueExpression(5), operation=*}, operation=+}
+}
+======SYM_TABLE======
+a : 0
+b : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-51
+======EXE_STACK======
+{b = ArithmeticExpression{expression1=VariableExpression(a), expression2=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(1), operation=+}, operation=+}; Print{VariableExpression(b)}
+}
+======SYM_TABLE======
+a : 17
+b : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-51
+======EXE_STACK======
+{b = ArithmeticExpression{expression1=VariableExpression(a), expression2=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(1), operation=+}, operation=+}; Print{VariableExpression(b)}
+}
+======SYM_TABLE======
+a : 17
+b : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-51
+======EXE_STACK======
+{Print{VariableExpression(b)}
+b = ArithmeticExpression{expression1=VariableExpression(a), expression2=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(1), operation=+}, operation=+}
+}
+======SYM_TABLE======
+a : 17
+b : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-51
+======EXE_STACK======
+{Print{VariableExpression(b)}
+b = ArithmeticExpression{expression1=VariableExpression(a), expression2=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(1), operation=+}, operation=+}
+}
+======SYM_TABLE======
+a : 17
+b : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-51
+======EXE_STACK======
+{Print{VariableExpression(b)}
+}
+======SYM_TABLE======
+a : 17
+b : 35
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-51
+======EXE_STACK======
+{Print{VariableExpression(b)}
+}
+======SYM_TABLE======
+a : 17
+b : 35
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-51
+======EXE_STACK======
+{}
+======SYM_TABLE======
+a : 17
+b : 35
+======OUT======
+35
+======FILE_TABLE======
+======HEAP======
+{}

@@ -51,6 +51,15 @@ public class NewStatement implements IStatement{
     }
 
     @Override
+    public IDictionary<String, Type> typeCheck(IDictionary<String, Type> typeTable) throws InterpreterException {
+        Type typeVariable = typeTable.get(variableName);
+        Type typeExpression = expression.typeCheck(typeTable);
+        if (typeVariable.equals(new ReferenceType(typeExpression)))
+            return typeTable;
+        else throw new InterpreterException("ERROR: NEW Statement right hand side and left hand side have different types.");
+    }
+
+    @Override
     public IStatement deepCopy() {
         return new NewStatement(variableName, expression.deepCopy());
     }

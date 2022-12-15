@@ -6,6 +6,7 @@ import model.programState.ProgramState;
 import model.statements.IStatement;
 import model.values.ReferenceValue;
 import model.values.Value;
+import model.types.Type;
 import repository.IRepository;
 
 import java.io.BufferedReader;
@@ -76,6 +77,8 @@ public class Controller {
 
 
     public void allStep() throws InterpreterException, IOException, InterruptedException {
+        runTypechecker();
+
         executor = Executors.newFixedThreadPool(2);
         List<ProgramState> programStateList = removeCompletedPrograms(repository.getProgramList()); // remove the completed programs
 
@@ -110,6 +113,15 @@ public class Controller {
         executionStack.push(statement);
         ProgramState newProgState = new ProgramState(executionStack, symTable, output, fileTable, heap);
         this.repository.addProgram(newProgState);
+    }
+
+    public void runTypechecker() throws InterpreterException
+    {
+        for (ProgramState prgState : getProgramStates())
+        {
+            IDictionary<String, Type> typeTable = new MyDictionary<>();
+            prgState.getExecutionStack().get_top().typeCheck(typeTable);
+        }
     }
 
     public List<ProgramState> getProgramStates() {

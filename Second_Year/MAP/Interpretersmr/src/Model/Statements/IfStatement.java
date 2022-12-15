@@ -6,6 +6,7 @@ import model.adts.IHeap;
 import model.expressions.Expression;
 import model.programState.ProgramState;
 import model.types.BoolType;
+import model.types.Type;
 import model.values.BoolValue;
 import model.values.Value;
 
@@ -38,6 +39,16 @@ public class IfStatement implements IStatement{
             return null;
         }
         throw new InterpreterException(String.format("ERROR: %s is not of boolean type inside the if statement", value.toString()));
+    }
+
+    @Override
+    public IDictionary<String, Type> typeCheck(IDictionary<String, Type> typeTable) throws InterpreterException {
+        Type typeExpression = expression.typeCheck(typeTable);
+        if (!typeExpression.equals(new BoolType())) throw new InterpreterException("ERROR: The condition in IF must be of bool type.");
+        thenStatement.typeCheck(typeTable.copy());
+        elseStatement.typeCheck(typeTable.copy());
+
+        return typeTable;
     }
 
     @Override

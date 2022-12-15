@@ -1,0 +1,300 @@
+======ID======
+84
+======EXE_STACK======
+{DeclarationStatement{a : bool }; DeclarationStatement{v : int }; a = ValueExpression(true); if (VariableExpression(a)) {
+	v = ValueExpression(2)
+}else{
+	v = ValueExpression(3)
+}; Print{VariableExpression(v)}
+}
+======SYM_TABLE======
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+84
+======EXE_STACK======
+{DeclarationStatement{v : int }; a = ValueExpression(true); if (VariableExpression(a)) {
+	v = ValueExpression(2)
+}else{
+	v = ValueExpression(3)
+}; Print{VariableExpression(v)}
+DeclarationStatement{a : bool }
+}
+======SYM_TABLE======
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+84
+======EXE_STACK======
+{DeclarationStatement{v : int }; a = ValueExpression(true); if (VariableExpression(a)) {
+	v = ValueExpression(2)
+}else{
+	v = ValueExpression(3)
+}; Print{VariableExpression(v)}
+DeclarationStatement{a : bool }
+}
+======SYM_TABLE======
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+84
+======EXE_STACK======
+{DeclarationStatement{v : int }; a = ValueExpression(true); if (VariableExpression(a)) {
+	v = ValueExpression(2)
+}else{
+	v = ValueExpression(3)
+}; Print{VariableExpression(v)}
+}
+======SYM_TABLE======
+a : false
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+84
+======EXE_STACK======
+{DeclarationStatement{v : int }; a = ValueExpression(true); if (VariableExpression(a)) {
+	v = ValueExpression(2)
+}else{
+	v = ValueExpression(3)
+}; Print{VariableExpression(v)}
+}
+======SYM_TABLE======
+a : false
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+84
+======EXE_STACK======
+{a = ValueExpression(true); if (VariableExpression(a)) {
+	v = ValueExpression(2)
+}else{
+	v = ValueExpression(3)
+}; Print{VariableExpression(v)}
+DeclarationStatement{v : int }
+}
+======SYM_TABLE======
+a : false
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+84
+======EXE_STACK======
+{a = ValueExpression(true); if (VariableExpression(a)) {
+	v = ValueExpression(2)
+}else{
+	v = ValueExpression(3)
+}; Print{VariableExpression(v)}
+DeclarationStatement{v : int }
+}
+======SYM_TABLE======
+a : false
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+84
+======EXE_STACK======
+{a = ValueExpression(true); if (VariableExpression(a)) {
+	v = ValueExpression(2)
+}else{
+	v = ValueExpression(3)
+}; Print{VariableExpression(v)}
+}
+======SYM_TABLE======
+a : false
+v : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+84
+======EXE_STACK======
+{a = ValueExpression(true); if (VariableExpression(a)) {
+	v = ValueExpression(2)
+}else{
+	v = ValueExpression(3)
+}; Print{VariableExpression(v)}
+}
+======SYM_TABLE======
+a : false
+v : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+84
+======EXE_STACK======
+{if (VariableExpression(a)) {
+	v = ValueExpression(2)
+}else{
+	v = ValueExpression(3)
+}; Print{VariableExpression(v)}
+a = ValueExpression(true)
+}
+======SYM_TABLE======
+a : false
+v : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+84
+======EXE_STACK======
+{if (VariableExpression(a)) {
+	v = ValueExpression(2)
+}else{
+	v = ValueExpression(3)
+}; Print{VariableExpression(v)}
+a = ValueExpression(true)
+}
+======SYM_TABLE======
+a : false
+v : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+84
+======EXE_STACK======
+{if (VariableExpression(a)) {
+	v = ValueExpression(2)
+}else{
+	v = ValueExpression(3)
+}; Print{VariableExpression(v)}
+}
+======SYM_TABLE======
+a : true
+v : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+84
+======EXE_STACK======
+{if (VariableExpression(a)) {
+	v = ValueExpression(2)
+}else{
+	v = ValueExpression(3)
+}; Print{VariableExpression(v)}
+}
+======SYM_TABLE======
+a : true
+v : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+84
+======EXE_STACK======
+{Print{VariableExpression(v)}
+if (VariableExpression(a)) {
+	v = ValueExpression(2)
+}else{
+	v = ValueExpression(3)
+}
+}
+======SYM_TABLE======
+a : true
+v : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+84
+======EXE_STACK======
+{Print{VariableExpression(v)}
+if (VariableExpression(a)) {
+	v = ValueExpression(2)
+}else{
+	v = ValueExpression(3)
+}
+}
+======SYM_TABLE======
+a : true
+v : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+84
+======EXE_STACK======
+{Print{VariableExpression(v)}
+v = ValueExpression(2)
+}
+======SYM_TABLE======
+a : true
+v : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+84
+======EXE_STACK======
+{Print{VariableExpression(v)}
+v = ValueExpression(2)
+}
+======SYM_TABLE======
+a : true
+v : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+84
+======EXE_STACK======
+{Print{VariableExpression(v)}
+}
+======SYM_TABLE======
+a : true
+v : 2
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+84
+======EXE_STACK======
+{Print{VariableExpression(v)}
+}
+======SYM_TABLE======
+a : true
+v : 2
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+84
+======EXE_STACK======
+{}
+======SYM_TABLE======
+a : true
+v : 2
+======OUT======
+2
+======FILE_TABLE======
+======HEAP======
+{}

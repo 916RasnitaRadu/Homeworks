@@ -1,8 +1,10 @@
 package model.statements;
 
 import exceptions.InterpreterException;
+import model.adts.IDictionary;
 import model.adts.IStack;
 import model.programState.ProgramState;
+import model.types.Type;
 
 public class CompoundStatement implements IStatement {
     private IStatement statement1;
@@ -20,6 +22,11 @@ public class CompoundStatement implements IStatement {
         stack.push(statement2);
         stack.push(statement1);
         return null;
+    }
+
+    @Override
+    public IDictionary<String, Type> typeCheck(IDictionary<String, Type> typeTable) throws InterpreterException {
+        return statement2.typeCheck(statement1.typeCheck(typeTable));
     }
 
     @Override

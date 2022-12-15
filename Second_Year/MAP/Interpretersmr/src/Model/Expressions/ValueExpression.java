@@ -3,6 +3,7 @@ package model.expressions;
 import exceptions.InterpreterException;
 import model.adts.IDictionary;
 import model.adts.IHeap;
+import model.types.Type;
 import model.values.Value;
 
 public class ValueExpression implements Expression {
@@ -23,6 +24,11 @@ public class ValueExpression implements Expression {
     @Override
     public Value eval(IDictionary<String, Value> table, IHeap<Value> heap) throws InterpreterException {
         return value;
+    }
+
+    @Override
+    public Type typeCheck(IDictionary<String, Type> typeEnv) throws InterpreterException {
+        return value.getType();
     }
 
     @Override
