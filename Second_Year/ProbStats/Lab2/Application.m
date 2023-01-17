@@ -9,7 +9,7 @@
 # c)
 
 %P(X=0)
-binocdf(0,3,0.5)
+binopdf(0,3,0.5)
 
 %P(x!=1)
 1 - binopdf(0,3,0.5)

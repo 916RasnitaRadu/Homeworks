@@ -1,0 +1,30 @@
+Hypothesis testing:
+"past"/previous experiences: H0 - null hypothesis
+"future"/alternatives: H2 alternate/research hypothesis
+
+Usually we have:
+	H0: theta = theta0
+	H1: either one of the following: theta < theta0 (left-tailed test)
+					 theta > theta0 (right-tailed test)
+					 theta != theta0 (two tailed/bilateral test)'
+Terminology:
+alpha = significance level belongs (0,1), but in application: alpha belongs {0.05, 0.01, 0.001}
+TS = test statistic
+TS0 = TS(theta = theta0) = observed value of the test statistic (TS)
+RR = rejection region
+P-value = minimum threshold of rejection (smallest alpha we still reject H0)
+
+How do we decide if we reject or do not H0
+folosim numai reject/do not reject H0 fara accept sau altceva ca daca nu "bye-bye points" (nu stiu frate, ii ciudat profu asta)
+
+Hypothesis testing: if (TS0 belongs RR) then reject H0
+		    else do not reject H0
+
+Significance testing (...)
+
+VERY IMPORTANT:
+Print clearly on the screen TS0, RR, P.
+
+Sigma^2 - vartest
+if you have 2 populations:
+(sigma1)^2 / (sigma2)^2 - vartest2
