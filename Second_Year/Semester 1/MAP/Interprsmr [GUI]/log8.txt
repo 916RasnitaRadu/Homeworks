@@ -1,0 +1,565 @@
+======ID======
+3
+======EXE_STACK======
+{DeclarationStatement{v : int }
+; DeclarationStatement{a : Ref(int )}
+; v = ValueExpression(10)
+; New{a, ValueExpression(22)}
+; ForkStatement{ WriteHeap{a, ValueExpression(30)}
+; v = ValueExpression(32)
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+ }
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+
+}
+======SYM_TABLE======
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+3
+======EXE_STACK======
+{DeclarationStatement{a : Ref(int )}
+; v = ValueExpression(10)
+; New{a, ValueExpression(22)}
+; ForkStatement{ WriteHeap{a, ValueExpression(30)}
+; v = ValueExpression(32)
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+ }
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+
+DeclarationStatement{v : int }
+
+}
+======SYM_TABLE======
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+3
+======EXE_STACK======
+{DeclarationStatement{a : Ref(int )}
+; v = ValueExpression(10)
+; New{a, ValueExpression(22)}
+; ForkStatement{ WriteHeap{a, ValueExpression(30)}
+; v = ValueExpression(32)
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+ }
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+
+DeclarationStatement{v : int }
+
+}
+======SYM_TABLE======
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+3
+======EXE_STACK======
+{DeclarationStatement{a : Ref(int )}
+; v = ValueExpression(10)
+; New{a, ValueExpression(22)}
+; ForkStatement{ WriteHeap{a, ValueExpression(30)}
+; v = ValueExpression(32)
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+ }
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+
+}
+======SYM_TABLE======
+v : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+3
+======EXE_STACK======
+{DeclarationStatement{a : Ref(int )}
+; v = ValueExpression(10)
+; New{a, ValueExpression(22)}
+; ForkStatement{ WriteHeap{a, ValueExpression(30)}
+; v = ValueExpression(32)
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+ }
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+
+}
+======SYM_TABLE======
+v : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+3
+======EXE_STACK======
+{v = ValueExpression(10)
+; New{a, ValueExpression(22)}
+; ForkStatement{ WriteHeap{a, ValueExpression(30)}
+; v = ValueExpression(32)
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+ }
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+
+DeclarationStatement{a : Ref(int )}
+
+}
+======SYM_TABLE======
+v : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+3
+======EXE_STACK======
+{v = ValueExpression(10)
+; New{a, ValueExpression(22)}
+; ForkStatement{ WriteHeap{a, ValueExpression(30)}
+; v = ValueExpression(32)
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+ }
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+
+DeclarationStatement{a : Ref(int )}
+
+}
+======SYM_TABLE======
+v : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+3
+======EXE_STACK======
+{v = ValueExpression(10)
+; New{a, ValueExpression(22)}
+; ForkStatement{ WriteHeap{a, ValueExpression(30)}
+; v = ValueExpression(32)
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+ }
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+
+}
+======SYM_TABLE======
+a : (0,int )
+v : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+3
+======EXE_STACK======
+{v = ValueExpression(10)
+; New{a, ValueExpression(22)}
+; ForkStatement{ WriteHeap{a, ValueExpression(30)}
+; v = ValueExpression(32)
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+ }
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+
+}
+======SYM_TABLE======
+a : (0,int )
+v : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+3
+======EXE_STACK======
+{New{a, ValueExpression(22)}
+; ForkStatement{ WriteHeap{a, ValueExpression(30)}
+; v = ValueExpression(32)
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+ }
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+
+v = ValueExpression(10)
+
+}
+======SYM_TABLE======
+a : (0,int )
+v : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+3
+======EXE_STACK======
+{New{a, ValueExpression(22)}
+; ForkStatement{ WriteHeap{a, ValueExpression(30)}
+; v = ValueExpression(32)
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+ }
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+
+v = ValueExpression(10)
+
+}
+======SYM_TABLE======
+a : (0,int )
+v : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+3
+======EXE_STACK======
+{New{a, ValueExpression(22)}
+; ForkStatement{ WriteHeap{a, ValueExpression(30)}
+; v = ValueExpression(32)
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+ }
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+
+}
+======SYM_TABLE======
+a : (0,int )
+v : 10
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+3
+======EXE_STACK======
+{New{a, ValueExpression(22)}
+; ForkStatement{ WriteHeap{a, ValueExpression(30)}
+; v = ValueExpression(32)
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+ }
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+
+}
+======SYM_TABLE======
+a : (0,int )
+v : 10
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+3
+======EXE_STACK======
+{ForkStatement{ WriteHeap{a, ValueExpression(30)}
+; v = ValueExpression(32)
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+ }
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+
+New{a, ValueExpression(22)}
+
+}
+======SYM_TABLE======
+a : (0,int )
+v : 10
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+3
+======EXE_STACK======
+{ForkStatement{ WriteHeap{a, ValueExpression(30)}
+; v = ValueExpression(32)
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+ }
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+
+New{a, ValueExpression(22)}
+
+}
+======SYM_TABLE======
+a : (0,int )
+v : 10
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+3
+======EXE_STACK======
+{ForkStatement{ WriteHeap{a, ValueExpression(30)}
+; v = ValueExpression(32)
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+ }
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+
+}
+======SYM_TABLE======
+a : (1,int )
+v : 10
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{1 -> 22
+}
+======ID======
+3
+======EXE_STACK======
+{ForkStatement{ WriteHeap{a, ValueExpression(30)}
+; v = ValueExpression(32)
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+ }
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+
+}
+======SYM_TABLE======
+a : (1,int )
+v : 10
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{1 -> 22
+}
+======ID======
+3
+======EXE_STACK======
+{Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+
+ForkStatement{ WriteHeap{a, ValueExpression(30)}
+; v = ValueExpression(32)
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+ }
+
+}
+======SYM_TABLE======
+a : (1,int )
+v : 10
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{1 -> 22
+}
+======ID======
+3
+======EXE_STACK======
+{Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+
+ForkStatement{ WriteHeap{a, ValueExpression(30)}
+; v = ValueExpression(32)
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+ }
+
+}
+======SYM_TABLE======
+a : (1,int )
+v : 10
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{1 -> 22
+}
+======ID======
+3
+======EXE_STACK======
+{Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+
+}
+======SYM_TABLE======
+a : (1,int )
+v : 10
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{1 -> 22
+}
+======ID======
+4
+======EXE_STACK======
+{WriteHeap{a, ValueExpression(30)}
+; v = ValueExpression(32)
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+
+}
+======SYM_TABLE======
+a : (1,int )
+v : 10
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{1 -> 22
+}
+======ID======
+3
+======EXE_STACK======
+{Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+
+}
+======SYM_TABLE======
+a : (1,int )
+v : 10
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{1 -> 22
+}
+======ID======
+4
+======EXE_STACK======
+{WriteHeap{a, ValueExpression(30)}
+; v = ValueExpression(32)
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+
+}
+======SYM_TABLE======
+a : (1,int )
+v : 10
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{1 -> 22
+}
+======ID======
+3
+======EXE_STACK======
+{Print{ReadHeap{VariableExpression(a)}}
+
+Print{VariableExpression(v)}
+
+}
+======SYM_TABLE======
+a : (1,int )
+v : 10
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{1 -> 22
+}
+======ID======
+4
+======EXE_STACK======
+{v = ValueExpression(32)
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+
+WriteHeap{a, ValueExpression(30)}
+
+}
+======SYM_TABLE======
+a : (1,int )
+v : 10
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{1 -> 22
+}
+======ID======
+3
+======EXE_STACK======
+{Print{ReadHeap{VariableExpression(a)}}
+
+Print{VariableExpression(v)}
+
+}
+======SYM_TABLE======
+a : (1,int )
+v : 10
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{1 -> 22
+}
+======ID======
+4
+======EXE_STACK======
+{v = ValueExpression(32)
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+
+WriteHeap{a, ValueExpression(30)}
+
+}
+======SYM_TABLE======
+a : (1,int )
+v : 10
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{1 -> 22
+}
+======ID======
+3
+======EXE_STACK======
+{Print{ReadHeap{VariableExpression(a)}}
+
+}
+======SYM_TABLE======
+a : (1,int )
+v : 10
+======OUT======
+10
+======FILE_TABLE======
+======HEAP======
+{1 -> 30
+}
+======ID======
+4
+======EXE_STACK======
+{v = ValueExpression(32)
+; Print{VariableExpression(v)}
+; Print{ReadHeap{VariableExpression(a)}}
+
+}
+======SYM_TABLE======
+a : (1,int )
+v : 10
+======OUT======
+10
+======FILE_TABLE======
+======HEAP======
+{1 -> 30
+}

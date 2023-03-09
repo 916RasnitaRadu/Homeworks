@@ -1,0 +1,285 @@
+======ID======
+68
+======EXE_STACK======
+{DeclarationStatement{v : Ref(int )}; New{v, ValueExpression(20)}; DeclarationStatement{a : Ref(Ref(int ))}; New{a, VariableExpression(v)}; Print{ReadHeap{VariableExpression(v)}}; Print{ArithmeticExpression{expression1=ReadHeap{ReadHeap{VariableExpression(a)}}, expression2=ValueExpression(5), operation=+}}
+}
+======SYM_TABLE======
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+68
+======EXE_STACK======
+{New{v, ValueExpression(20)}; DeclarationStatement{a : Ref(Ref(int ))}; New{a, VariableExpression(v)}; Print{ReadHeap{VariableExpression(v)}}; Print{ArithmeticExpression{expression1=ReadHeap{ReadHeap{VariableExpression(a)}}, expression2=ValueExpression(5), operation=+}}
+DeclarationStatement{v : Ref(int )}
+}
+======SYM_TABLE======
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+68
+======EXE_STACK======
+{New{v, ValueExpression(20)}; DeclarationStatement{a : Ref(Ref(int ))}; New{a, VariableExpression(v)}; Print{ReadHeap{VariableExpression(v)}}; Print{ArithmeticExpression{expression1=ReadHeap{ReadHeap{VariableExpression(a)}}, expression2=ValueExpression(5), operation=+}}
+DeclarationStatement{v : Ref(int )}
+}
+======SYM_TABLE======
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+68
+======EXE_STACK======
+{New{v, ValueExpression(20)}; DeclarationStatement{a : Ref(Ref(int ))}; New{a, VariableExpression(v)}; Print{ReadHeap{VariableExpression(v)}}; Print{ArithmeticExpression{expression1=ReadHeap{ReadHeap{VariableExpression(a)}}, expression2=ValueExpression(5), operation=+}}
+}
+======SYM_TABLE======
+v : (0,int )
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+68
+======EXE_STACK======
+{New{v, ValueExpression(20)}; DeclarationStatement{a : Ref(Ref(int ))}; New{a, VariableExpression(v)}; Print{ReadHeap{VariableExpression(v)}}; Print{ArithmeticExpression{expression1=ReadHeap{ReadHeap{VariableExpression(a)}}, expression2=ValueExpression(5), operation=+}}
+}
+======SYM_TABLE======
+v : (0,int )
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+68
+======EXE_STACK======
+{DeclarationStatement{a : Ref(Ref(int ))}; New{a, VariableExpression(v)}; Print{ReadHeap{VariableExpression(v)}}; Print{ArithmeticExpression{expression1=ReadHeap{ReadHeap{VariableExpression(a)}}, expression2=ValueExpression(5), operation=+}}
+New{v, ValueExpression(20)}
+}
+======SYM_TABLE======
+v : (0,int )
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+68
+======EXE_STACK======
+{DeclarationStatement{a : Ref(Ref(int ))}; New{a, VariableExpression(v)}; Print{ReadHeap{VariableExpression(v)}}; Print{ArithmeticExpression{expression1=ReadHeap{ReadHeap{VariableExpression(a)}}, expression2=ValueExpression(5), operation=+}}
+New{v, ValueExpression(20)}
+}
+======SYM_TABLE======
+v : (0,int )
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+68
+======EXE_STACK======
+{DeclarationStatement{a : Ref(Ref(int ))}; New{a, VariableExpression(v)}; Print{ReadHeap{VariableExpression(v)}}; Print{ArithmeticExpression{expression1=ReadHeap{ReadHeap{VariableExpression(a)}}, expression2=ValueExpression(5), operation=+}}
+}
+======SYM_TABLE======
+v : (1,int )
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{1 -> 20
+}
+======ID======
+68
+======EXE_STACK======
+{DeclarationStatement{a : Ref(Ref(int ))}; New{a, VariableExpression(v)}; Print{ReadHeap{VariableExpression(v)}}; Print{ArithmeticExpression{expression1=ReadHeap{ReadHeap{VariableExpression(a)}}, expression2=ValueExpression(5), operation=+}}
+}
+======SYM_TABLE======
+v : (1,int )
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{1 -> 20
+}
+======ID======
+68
+======EXE_STACK======
+{New{a, VariableExpression(v)}; Print{ReadHeap{VariableExpression(v)}}; Print{ArithmeticExpression{expression1=ReadHeap{ReadHeap{VariableExpression(a)}}, expression2=ValueExpression(5), operation=+}}
+DeclarationStatement{a : Ref(Ref(int ))}
+}
+======SYM_TABLE======
+v : (1,int )
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{1 -> 20
+}
+======ID======
+68
+======EXE_STACK======
+{New{a, VariableExpression(v)}; Print{ReadHeap{VariableExpression(v)}}; Print{ArithmeticExpression{expression1=ReadHeap{ReadHeap{VariableExpression(a)}}, expression2=ValueExpression(5), operation=+}}
+DeclarationStatement{a : Ref(Ref(int ))}
+}
+======SYM_TABLE======
+v : (1,int )
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{1 -> 20
+}
+======ID======
+68
+======EXE_STACK======
+{New{a, VariableExpression(v)}; Print{ReadHeap{VariableExpression(v)}}; Print{ArithmeticExpression{expression1=ReadHeap{ReadHeap{VariableExpression(a)}}, expression2=ValueExpression(5), operation=+}}
+}
+======SYM_TABLE======
+a : (0,Ref(int ))
+v : (1,int )
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{1 -> 20
+}
+======ID======
+68
+======EXE_STACK======
+{New{a, VariableExpression(v)}; Print{ReadHeap{VariableExpression(v)}}; Print{ArithmeticExpression{expression1=ReadHeap{ReadHeap{VariableExpression(a)}}, expression2=ValueExpression(5), operation=+}}
+}
+======SYM_TABLE======
+a : (0,Ref(int ))
+v : (1,int )
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{1 -> 20
+}
+======ID======
+68
+======EXE_STACK======
+{Print{ReadHeap{VariableExpression(v)}}; Print{ArithmeticExpression{expression1=ReadHeap{ReadHeap{VariableExpression(a)}}, expression2=ValueExpression(5), operation=+}}
+New{a, VariableExpression(v)}
+}
+======SYM_TABLE======
+a : (0,Ref(int ))
+v : (1,int )
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{1 -> 20
+}
+======ID======
+68
+======EXE_STACK======
+{Print{ReadHeap{VariableExpression(v)}}; Print{ArithmeticExpression{expression1=ReadHeap{ReadHeap{VariableExpression(a)}}, expression2=ValueExpression(5), operation=+}}
+New{a, VariableExpression(v)}
+}
+======SYM_TABLE======
+a : (0,Ref(int ))
+v : (1,int )
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{1 -> 20
+}
+======ID======
+68
+======EXE_STACK======
+{Print{ReadHeap{VariableExpression(v)}}; Print{ArithmeticExpression{expression1=ReadHeap{ReadHeap{VariableExpression(a)}}, expression2=ValueExpression(5), operation=+}}
+}
+======SYM_TABLE======
+a : (2,Ref(int ))
+v : (1,int )
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{1 -> 20
+2 -> (1,int )
+}
+======ID======
+68
+======EXE_STACK======
+{Print{ReadHeap{VariableExpression(v)}}; Print{ArithmeticExpression{expression1=ReadHeap{ReadHeap{VariableExpression(a)}}, expression2=ValueExpression(5), operation=+}}
+}
+======SYM_TABLE======
+a : (2,Ref(int ))
+v : (1,int )
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{1 -> 20
+2 -> (1,int )
+}
+======ID======
+68
+======EXE_STACK======
+{Print{ArithmeticExpression{expression1=ReadHeap{ReadHeap{VariableExpression(a)}}, expression2=ValueExpression(5), operation=+}}
+Print{ReadHeap{VariableExpression(v)}}
+}
+======SYM_TABLE======
+a : (2,Ref(int ))
+v : (1,int )
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{1 -> 20
+2 -> (1,int )
+}
+======ID======
+68
+======EXE_STACK======
+{Print{ArithmeticExpression{expression1=ReadHeap{ReadHeap{VariableExpression(a)}}, expression2=ValueExpression(5), operation=+}}
+Print{ReadHeap{VariableExpression(v)}}
+}
+======SYM_TABLE======
+a : (2,Ref(int ))
+v : (1,int )
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{1 -> 20
+2 -> (1,int )
+}
+======ID======
+68
+======EXE_STACK======
+{Print{ArithmeticExpression{expression1=ReadHeap{ReadHeap{VariableExpression(a)}}, expression2=ValueExpression(5), operation=+}}
+}
+======SYM_TABLE======
+a : (2,Ref(int ))
+v : (1,int )
+======OUT======
+20
+======FILE_TABLE======
+======HEAP======
+{1 -> 20
+2 -> (1,int )
+}
+======ID======
+68
+======EXE_STACK======
+{Print{ArithmeticExpression{expression1=ReadHeap{ReadHeap{VariableExpression(a)}}, expression2=ValueExpression(5), operation=+}}
+}
+======SYM_TABLE======
+a : (2,Ref(int ))
+v : (1,int )
+======OUT======
+20
+======FILE_TABLE======
+======HEAP======
+{1 -> 20
+2 -> (1,int )
+}
+======ID======
+68
+======EXE_STACK======
+{}
+======SYM_TABLE======
+a : (2,Ref(int ))
+v : (1,int )
+======OUT======
+20
+25
+======FILE_TABLE======
+======HEAP======
+{1 -> 20
+2 -> (1,int )
+}

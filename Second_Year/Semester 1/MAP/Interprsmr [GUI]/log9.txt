@@ -1,0 +1,3662 @@
+======ID======
+-71
+======EXE_STACK======
+{DeclarationStatement{a : int }; DeclarationStatement{b : int }; DeclarationStatement{c : int }; a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{DeclarationStatement{b : int }; DeclarationStatement{c : int }; a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+DeclarationStatement{a : int }
+}
+======SYM_TABLE======
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{DeclarationStatement{b : int }; DeclarationStatement{c : int }; a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+DeclarationStatement{a : int }
+}
+======SYM_TABLE======
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{DeclarationStatement{b : int }; DeclarationStatement{c : int }; a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{DeclarationStatement{b : int }; DeclarationStatement{c : int }; a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{DeclarationStatement{c : int }; a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+DeclarationStatement{b : int }
+}
+======SYM_TABLE======
+a : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{DeclarationStatement{c : int }; a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+DeclarationStatement{b : int }
+}
+======SYM_TABLE======
+a : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{DeclarationStatement{c : int }; a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 0
+b : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{DeclarationStatement{c : int }; a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 0
+b : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+DeclarationStatement{c : int }
+}
+======SYM_TABLE======
+a : 0
+b : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+DeclarationStatement{c : int }
+}
+======SYM_TABLE======
+a : 0
+b : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 0
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 0
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+a = ValueExpression(1)
+}
+======SYM_TABLE======
+a : 0
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+a = ValueExpression(1)
+}
+======SYM_TABLE======
+a : 0
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 1
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 1
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+b = ValueExpression(2)
+}
+======SYM_TABLE======
+a : 1
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+b = ValueExpression(2)
+}
+======SYM_TABLE======
+a : 1
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+c = ValueExpression(5)
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+c = ValueExpression(5)
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{Print{ValueExpression(300)}
+switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{Print{ValueExpression(300)}
+switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{Print{ValueExpression(300)}
+if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}, operator='=='}) {
+	Print{VariableExpression(a)}; Print{VariableExpression(b)}
+}else{
+	if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ValueExpression(10), operator='=='}) {
+	Print{ValueExpression(100)}; Print{ValueExpression(200)}
+}else{
+	Print{ValueExpression(300)}
+}
+}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{Print{ValueExpression(300)}
+if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}, operator='=='}) {
+	Print{VariableExpression(a)}; Print{VariableExpression(b)}
+}else{
+	if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ValueExpression(10), operator='=='}) {
+	Print{ValueExpression(100)}; Print{ValueExpression(200)}
+}else{
+	Print{ValueExpression(300)}
+}
+}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{Print{ValueExpression(300)}
+if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}, operator='=='}) {
+	Print{VariableExpression(a)}; Print{VariableExpression(b)}
+}else{
+	if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ValueExpression(10), operator='=='}) {
+	Print{ValueExpression(100)}; Print{ValueExpression(200)}
+}else{
+	Print{ValueExpression(300)}
+}
+}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{Print{ValueExpression(300)}
+if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}, operator='=='}) {
+	Print{VariableExpression(a)}; Print{VariableExpression(b)}
+}else{
+	if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ValueExpression(10), operator='=='}) {
+	Print{ValueExpression(100)}; Print{ValueExpression(200)}
+}else{
+	Print{ValueExpression(300)}
+}
+}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{Print{VariableExpression(a)}; Print{VariableExpression(b)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{Print{VariableExpression(a)}; Print{VariableExpression(b)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{Print{VariableExpression(a)}; Print{VariableExpression(b)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{Print{VariableExpression(a)}; Print{VariableExpression(b)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{Print{VariableExpression(b)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+1
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{Print{VariableExpression(b)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+1
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{Print{VariableExpression(b)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+1
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{Print{VariableExpression(b)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+1
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+1
+2
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+-71
+======EXE_STACK======
+{}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+1
+2
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{DeclarationStatement{a : int }; DeclarationStatement{b : int }; DeclarationStatement{c : int }; a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{DeclarationStatement{b : int }; DeclarationStatement{c : int }; a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+DeclarationStatement{a : int }
+}
+======SYM_TABLE======
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{DeclarationStatement{b : int }; DeclarationStatement{c : int }; a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+DeclarationStatement{a : int }
+}
+======SYM_TABLE======
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{DeclarationStatement{b : int }; DeclarationStatement{c : int }; a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{DeclarationStatement{b : int }; DeclarationStatement{c : int }; a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{DeclarationStatement{c : int }; a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+DeclarationStatement{b : int }
+}
+======SYM_TABLE======
+a : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{DeclarationStatement{c : int }; a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+DeclarationStatement{b : int }
+}
+======SYM_TABLE======
+a : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{DeclarationStatement{c : int }; a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 0
+b : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{DeclarationStatement{c : int }; a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 0
+b : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+DeclarationStatement{c : int }
+}
+======SYM_TABLE======
+a : 0
+b : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+DeclarationStatement{c : int }
+}
+======SYM_TABLE======
+a : 0
+b : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 0
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 0
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+a = ValueExpression(1)
+}
+======SYM_TABLE======
+a : 0
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+a = ValueExpression(1)
+}
+======SYM_TABLE======
+a : 0
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 1
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 1
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+b = ValueExpression(2)
+}
+======SYM_TABLE======
+a : 1
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+b = ValueExpression(2)
+}
+======SYM_TABLE======
+a : 1
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+c = ValueExpression(5)
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+c = ValueExpression(5)
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{ValueExpression(300)}
+switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{ValueExpression(300)}
+switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{ValueExpression(300)}
+if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}, operator='=='}) {
+	Print{VariableExpression(a)}; Print{VariableExpression(b)}
+}else{
+	if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ValueExpression(10), operator='=='}) {
+	Print{ValueExpression(100)}; Print{ValueExpression(200)}
+}else{
+	Print{ValueExpression(300)}
+}
+}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{ValueExpression(300)}
+if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}, operator='=='}) {
+	Print{VariableExpression(a)}; Print{VariableExpression(b)}
+}else{
+	if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ValueExpression(10), operator='=='}) {
+	Print{ValueExpression(100)}; Print{ValueExpression(200)}
+}else{
+	Print{ValueExpression(300)}
+}
+}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{ValueExpression(300)}
+if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}, operator='=='}) {
+	Print{VariableExpression(a)}; Print{VariableExpression(b)}
+}else{
+	if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ValueExpression(10), operator='=='}) {
+	Print{ValueExpression(100)}; Print{ValueExpression(200)}
+}else{
+	Print{ValueExpression(300)}
+}
+}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{ValueExpression(300)}
+if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}, operator='=='}) {
+	Print{VariableExpression(a)}; Print{VariableExpression(b)}
+}else{
+	if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ValueExpression(10), operator='=='}) {
+	Print{ValueExpression(100)}; Print{ValueExpression(200)}
+}else{
+	Print{ValueExpression(300)}
+}
+}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{VariableExpression(a)}; Print{VariableExpression(b)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{VariableExpression(a)}; Print{VariableExpression(b)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{VariableExpression(a)}; Print{VariableExpression(b)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{VariableExpression(a)}; Print{VariableExpression(b)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{VariableExpression(b)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+1
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{VariableExpression(b)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+1
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{VariableExpression(b)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+1
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{VariableExpression(b)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+1
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+1
+2
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+1
+2
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{DeclarationStatement{a : int }; DeclarationStatement{b : int }; DeclarationStatement{c : int }; a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{DeclarationStatement{b : int }; DeclarationStatement{c : int }; a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+DeclarationStatement{a : int }
+}
+======SYM_TABLE======
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{DeclarationStatement{b : int }; DeclarationStatement{c : int }; a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+DeclarationStatement{a : int }
+}
+======SYM_TABLE======
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{DeclarationStatement{b : int }; DeclarationStatement{c : int }; a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{DeclarationStatement{b : int }; DeclarationStatement{c : int }; a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{DeclarationStatement{c : int }; a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+DeclarationStatement{b : int }
+}
+======SYM_TABLE======
+a : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{DeclarationStatement{c : int }; a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+DeclarationStatement{b : int }
+}
+======SYM_TABLE======
+a : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{DeclarationStatement{c : int }; a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 0
+b : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{DeclarationStatement{c : int }; a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 0
+b : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+DeclarationStatement{c : int }
+}
+======SYM_TABLE======
+a : 0
+b : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+DeclarationStatement{c : int }
+}
+======SYM_TABLE======
+a : 0
+b : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 0
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{a = ValueExpression(1); b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 0
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+a = ValueExpression(1)
+}
+======SYM_TABLE======
+a : 0
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+a = ValueExpression(1)
+}
+======SYM_TABLE======
+a : 0
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 1
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{b = ValueExpression(2); c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 1
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+b = ValueExpression(2)
+}
+======SYM_TABLE======
+a : 1
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+b = ValueExpression(2)
+}
+======SYM_TABLE======
+a : 1
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{c = ValueExpression(5); switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+c = ValueExpression(5)
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+c = ValueExpression(5)
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}; Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{ValueExpression(300)}
+switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{ValueExpression(300)}
+switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}){(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}; Print{VariableExpression(b)}) (case(ValueExpression(10)): Print{ValueExpression(100)}; Print{ValueExpression(200)}) (default: Print{ValueExpression(300)})}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{ValueExpression(300)}
+if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}, operator='=='}) {
+	Print{VariableExpression(a)}; Print{VariableExpression(b)}
+}else{
+	if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ValueExpression(10), operator='=='}) {
+	Print{ValueExpression(100)}; Print{ValueExpression(200)}
+}else{
+	Print{ValueExpression(300)}
+}
+}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{ValueExpression(300)}
+if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}, operator='=='}) {
+	Print{VariableExpression(a)}; Print{VariableExpression(b)}
+}else{
+	if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ValueExpression(10), operator='=='}) {
+	Print{ValueExpression(100)}; Print{ValueExpression(200)}
+}else{
+	Print{ValueExpression(300)}
+}
+}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{ValueExpression(300)}
+if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}, operator='=='}) {
+	Print{VariableExpression(a)}; Print{VariableExpression(b)}
+}else{
+	if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ValueExpression(10), operator='=='}) {
+	Print{ValueExpression(100)}; Print{ValueExpression(200)}
+}else{
+	Print{ValueExpression(300)}
+}
+}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{ValueExpression(300)}
+if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}, operator='=='}) {
+	Print{VariableExpression(a)}; Print{VariableExpression(b)}
+}else{
+	if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ValueExpression(10), operator='=='}) {
+	Print{ValueExpression(100)}; Print{ValueExpression(200)}
+}else{
+	Print{ValueExpression(300)}
+}
+}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{ValueExpression(300)}
+Print{VariableExpression(b)}
+Print{VariableExpression(a)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{ValueExpression(300)}
+Print{VariableExpression(b)}
+Print{VariableExpression(a)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{ValueExpression(300)}
+Print{VariableExpression(b)}
+Print{VariableExpression(a)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{ValueExpression(300)}
+Print{VariableExpression(b)}
+Print{VariableExpression(a)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+1
+2
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+1
+2
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+1
+2
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{ValueExpression(300)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+1
+2
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+1
+2
+300
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+1
+2
+300
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{DeclarationStatement{a : int }
+; DeclarationStatement{b : int }
+; DeclarationStatement{c : int }
+; a = ValueExpression(1)
+; b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+}
+======SYM_TABLE======
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{DeclarationStatement{b : int }
+; DeclarationStatement{c : int }
+; a = ValueExpression(1)
+; b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+DeclarationStatement{a : int }
+
+}
+======SYM_TABLE======
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{DeclarationStatement{b : int }
+; DeclarationStatement{c : int }
+; a = ValueExpression(1)
+; b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+DeclarationStatement{a : int }
+
+}
+======SYM_TABLE======
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{DeclarationStatement{b : int }
+; DeclarationStatement{c : int }
+; a = ValueExpression(1)
+; b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+}
+======SYM_TABLE======
+a : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{DeclarationStatement{b : int }
+; DeclarationStatement{c : int }
+; a = ValueExpression(1)
+; b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+}
+======SYM_TABLE======
+a : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{DeclarationStatement{c : int }
+; a = ValueExpression(1)
+; b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+DeclarationStatement{b : int }
+
+}
+======SYM_TABLE======
+a : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{DeclarationStatement{c : int }
+; a = ValueExpression(1)
+; b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+DeclarationStatement{b : int }
+
+}
+======SYM_TABLE======
+a : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{DeclarationStatement{c : int }
+; a = ValueExpression(1)
+; b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+}
+======SYM_TABLE======
+a : 0
+b : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{DeclarationStatement{c : int }
+; a = ValueExpression(1)
+; b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+}
+======SYM_TABLE======
+a : 0
+b : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{a = ValueExpression(1)
+; b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+DeclarationStatement{c : int }
+
+}
+======SYM_TABLE======
+a : 0
+b : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{a = ValueExpression(1)
+; b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+DeclarationStatement{c : int }
+
+}
+======SYM_TABLE======
+a : 0
+b : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{a = ValueExpression(1)
+; b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+}
+======SYM_TABLE======
+a : 0
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{a = ValueExpression(1)
+; b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+}
+======SYM_TABLE======
+a : 0
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+a = ValueExpression(1)
+
+}
+======SYM_TABLE======
+a : 0
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+a = ValueExpression(1)
+
+}
+======SYM_TABLE======
+a : 0
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+}
+======SYM_TABLE======
+a : 1
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+}
+======SYM_TABLE======
+a : 1
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+b = ValueExpression(2)
+
+}
+======SYM_TABLE======
+a : 1
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+b = ValueExpression(2)
+
+}
+======SYM_TABLE======
+a : 1
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+c = ValueExpression(5)
+
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+c = ValueExpression(5)
+
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{ValueExpression(300)}
+
+switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{ValueExpression(300)}
+
+switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{ValueExpression(300)}
+
+if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}, operator='=='}) {
+	Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+
+}else{
+	if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ValueExpression(10), operator='=='}) {
+	Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+
+}else{
+	Print{ValueExpression(300)}
+
+}
+}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{ValueExpression(300)}
+
+if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}, operator='=='}) {
+	Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+
+}else{
+	if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ValueExpression(10), operator='=='}) {
+	Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+
+}else{
+	Print{ValueExpression(300)}
+
+}
+}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{ValueExpression(300)}
+
+if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}, operator='=='}) {
+	Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+
+}else{
+	if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ValueExpression(10), operator='=='}) {
+	Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+
+}else{
+	Print{ValueExpression(300)}
+
+}
+}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{ValueExpression(300)}
+
+if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}, operator='=='}) {
+	Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+
+}else{
+	if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ValueExpression(10), operator='=='}) {
+	Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+
+}else{
+	Print{ValueExpression(300)}
+
+}
+}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{VariableExpression(b)}
+
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+1
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{VariableExpression(b)}
+
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+1
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{VariableExpression(b)}
+
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+1
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{Print{VariableExpression(b)}
+
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+1
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+1
+2
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+1
+======EXE_STACK======
+{}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+1
+2
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{DeclarationStatement{a : int }
+; DeclarationStatement{b : int }
+; DeclarationStatement{c : int }
+; a = ValueExpression(1)
+; b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+}
+======SYM_TABLE======
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{DeclarationStatement{b : int }
+; DeclarationStatement{c : int }
+; a = ValueExpression(1)
+; b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+DeclarationStatement{a : int }
+
+}
+======SYM_TABLE======
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{DeclarationStatement{b : int }
+; DeclarationStatement{c : int }
+; a = ValueExpression(1)
+; b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+DeclarationStatement{a : int }
+
+}
+======SYM_TABLE======
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{DeclarationStatement{b : int }
+; DeclarationStatement{c : int }
+; a = ValueExpression(1)
+; b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+}
+======SYM_TABLE======
+a : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{DeclarationStatement{b : int }
+; DeclarationStatement{c : int }
+; a = ValueExpression(1)
+; b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+}
+======SYM_TABLE======
+a : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{DeclarationStatement{c : int }
+; a = ValueExpression(1)
+; b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+DeclarationStatement{b : int }
+
+}
+======SYM_TABLE======
+a : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{DeclarationStatement{c : int }
+; a = ValueExpression(1)
+; b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+DeclarationStatement{b : int }
+
+}
+======SYM_TABLE======
+a : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{DeclarationStatement{c : int }
+; a = ValueExpression(1)
+; b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+}
+======SYM_TABLE======
+a : 0
+b : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{DeclarationStatement{c : int }
+; a = ValueExpression(1)
+; b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+}
+======SYM_TABLE======
+a : 0
+b : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{a = ValueExpression(1)
+; b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+DeclarationStatement{c : int }
+
+}
+======SYM_TABLE======
+a : 0
+b : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{a = ValueExpression(1)
+; b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+DeclarationStatement{c : int }
+
+}
+======SYM_TABLE======
+a : 0
+b : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{a = ValueExpression(1)
+; b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+}
+======SYM_TABLE======
+a : 0
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{a = ValueExpression(1)
+; b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+}
+======SYM_TABLE======
+a : 0
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+a = ValueExpression(1)
+
+}
+======SYM_TABLE======
+a : 0
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+a = ValueExpression(1)
+
+}
+======SYM_TABLE======
+a : 0
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+}
+======SYM_TABLE======
+a : 1
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{b = ValueExpression(2)
+; c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+}
+======SYM_TABLE======
+a : 1
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+b = ValueExpression(2)
+
+}
+======SYM_TABLE======
+a : 1
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+b = ValueExpression(2)
+
+}
+======SYM_TABLE======
+a : 1
+b : 0
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{c = ValueExpression(5)
+; switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+c = ValueExpression(5)
+
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+c = ValueExpression(5)
+
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 0
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}; Print{ValueExpression(300)}
+
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{Print{ValueExpression(300)}
+
+switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{Print{ValueExpression(300)}
+
+switch(ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*})
+{
+(case(ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}): Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+) 
+(case(ValueExpression(10)): Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+)
+ (default: Print{ValueExpression(300)}
+)}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{Print{ValueExpression(300)}
+
+if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}, operator='=='}) {
+	Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+
+}else{
+	if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ValueExpression(10), operator='=='}) {
+	Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+
+}else{
+	Print{ValueExpression(300)}
+
+}
+}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{Print{ValueExpression(300)}
+
+if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}, operator='=='}) {
+	Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+
+}else{
+	if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ValueExpression(10), operator='=='}) {
+	Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+
+}else{
+	Print{ValueExpression(300)}
+
+}
+}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{Print{ValueExpression(300)}
+
+if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}, operator='=='}) {
+	Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+
+}else{
+	if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ValueExpression(10), operator='=='}) {
+	Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+
+}else{
+	Print{ValueExpression(300)}
+
+}
+}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{Print{ValueExpression(300)}
+
+if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ArithmeticExpression{expression1=VariableExpression(b), expression2=VariableExpression(c), operation=*}, operator='=='}) {
+	Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+
+}else{
+	if (RelationalExpression{expression1=ArithmeticExpression{expression1=VariableExpression(a), expression2=ValueExpression(10), operation=*}, expression2=ValueExpression(10), operator='=='}) {
+	Print{ValueExpression(100)}
+; Print{ValueExpression(200)}
+
+}else{
+	Print{ValueExpression(300)}
+
+}
+}
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{Print{VariableExpression(a)}
+; Print{VariableExpression(b)}
+
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{Print{VariableExpression(b)}
+
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+1
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{Print{VariableExpression(b)}
+
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+1
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{Print{VariableExpression(b)}
+
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+1
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{Print{VariableExpression(b)}
+
+}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+1
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+1
+2
+======FILE_TABLE======
+======HEAP======
+{}
+======ID======
+2
+======EXE_STACK======
+{}
+======SYM_TABLE======
+a : 1
+b : 2
+c : 5
+======OUT======
+300
+1
+2
+======FILE_TABLE======
+======HEAP======
+{}
