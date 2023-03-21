@@ -1,0 +1,7 @@
+body, button, input { font-family: Verdana, Geneva, Tahoma, sans-serif; }
+html {font-size: 1vw;}
+html, body, ul, li, p, h1, h2,h3,h4,h5,h6 { margin: 0;}
+a { text-decoration: none;}
+u
+a:visited, a { color: inherit;}
+input, button { border: none; outline: none;}

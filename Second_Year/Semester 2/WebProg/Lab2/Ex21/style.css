@@ -40,5 +40,5 @@ div {
     background-color: green;
 }
 .third:has(.fourth:hover) {
-    background-color: purple;
+    background-color: tomato;
 }

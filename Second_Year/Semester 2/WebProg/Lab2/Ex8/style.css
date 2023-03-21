@@ -3,19 +3,18 @@
     height: 200px;
 }
 
-
 .flip-box {
     background-color: transparent;
     width: 300px;
     height: 200px;
-    border: 1px solid #f1f1f1;
+    border: 1px solid #250505;
     perspective: 1000px;
     margin: auto;
 }
 
 .flip-box:hover {
     transform: rotateY(180deg);
-    transition: transform 0.8s;
+    transition: transform 0.8s ease-in-out;
     transform-style: preserve-3d;
 }
 
