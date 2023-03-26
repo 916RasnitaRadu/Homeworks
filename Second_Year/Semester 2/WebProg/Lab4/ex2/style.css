@@ -1,0 +1,42 @@
+html {
+    font-size: 16px;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: inline-block;
+    justify-content: center;
+    min-height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.task {
+    margin-bottom: 100px;
+    margin-left: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 0px 40px 10px;
+}
+
+.image {
+    height: 300px;
+    width: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#fullsize-container, #fullsize {
+    margin: auto;
+    width: 280px;
+    height: 420px;
+}
+
