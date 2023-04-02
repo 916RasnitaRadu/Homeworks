@@ -22,4 +22,3 @@ thumbnails.addEventListener('mouseout', (event) => {
     fullImageContainer.style.display = 'none';
   }
 });
-

@@ -168,8 +168,8 @@ namespace A1
             DataGridViewRow selectedParent = parentTable.SelectedRows[0];
             if (selectedParent.Cells[0].Value.ToString() != String.Empty)
             { 
+                // we write in the textbox the id of the product type
                 this.idTypeBox.Text = selectedParent.Cells[0].Value.ToString();
-
 
                 if (this.parentTable.SelectedRows.Count > 0)
                 {
@@ -187,14 +187,14 @@ namespace A1
 
                 }
             }
-            // we write in the textbox the id of the product type
+            
             
         }
 
         private void childTable_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int index = childTable.SelectedRows[0].Index;
-            if (index <= childTable.SelectedRows.Count)
+            if (index <= childTable.SelectedRows.Count) // if the selected row is not emtpy
             {
                 this.productIdBox.Text = dataSet.Tables["Product"].Rows[index][0].ToString();
                 this.idTypeBox.Text = dataSet.Tables["Product"].Rows[index][1].ToString();

@@ -50,10 +50,12 @@
             // parentTable
             // 
             this.parentTable.AccessibleName = "parentTable";
+            this.parentTable.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.parentTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.parentTable.GridColor = System.Drawing.SystemColors.ActiveCaption;
             this.parentTable.Location = new System.Drawing.Point(75, 69);
             this.parentTable.Name = "parentTable";
-            this.parentTable.Size = new System.Drawing.Size(273, 261);
+            this.parentTable.Size = new System.Drawing.Size(273, 324);
             this.parentTable.TabIndex = 0;
             this.parentTable.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.parentTable_CellClick);
             this.parentTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -61,6 +63,7 @@
             // childTable
             // 
             this.childTable.AccessibleName = "childTable";
+            this.childTable.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.childTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.childTable.Location = new System.Drawing.Point(429, 69);
             this.childTable.Name = "childTable";
@@ -131,18 +134,20 @@
             // idTypeLabel
             // 
             this.idTypeLabel.AutoSize = true;
+            this.idTypeLabel.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.idTypeLabel.Location = new System.Drawing.Point(1100, 143);
             this.idTypeLabel.Name = "idTypeLabel";
-            this.idTypeLabel.Size = new System.Drawing.Size(45, 13);
+            this.idTypeLabel.Size = new System.Drawing.Size(52, 13);
             this.idTypeLabel.TabIndex = 10;
             this.idTypeLabel.Text = "ID Type";
             // 
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
+            this.nameLabel.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.nameLabel.Location = new System.Drawing.Point(1100, 190);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(35, 13);
+            this.nameLabel.Size = new System.Drawing.Size(40, 13);
             this.nameLabel.TabIndex = 11;
             this.nameLabel.Text = "Name";
             this.nameLabel.Click += new System.EventHandler(this.nameLabel_Click);
@@ -150,18 +155,20 @@
             // descLabel
             // 
             this.descLabel.AutoSize = true;
+            this.descLabel.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.descLabel.Location = new System.Drawing.Point(1100, 247);
             this.descLabel.Name = "descLabel";
-            this.descLabel.Size = new System.Drawing.Size(60, 13);
+            this.descLabel.Size = new System.Drawing.Size(71, 13);
             this.descLabel.TabIndex = 12;
             this.descLabel.Text = "Description";
             // 
             // priceLabel
             // 
             this.priceLabel.AutoSize = true;
+            this.priceLabel.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.priceLabel.Location = new System.Drawing.Point(1100, 351);
             this.priceLabel.Name = "priceLabel";
-            this.priceLabel.Size = new System.Drawing.Size(31, 13);
+            this.priceLabel.Size = new System.Drawing.Size(35, 13);
             this.priceLabel.TabIndex = 13;
             this.priceLabel.Text = "Price";
             // 
@@ -175,9 +182,10 @@
             // idlabel
             // 
             this.idlabel.AutoSize = true;
+            this.idlabel.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.idlabel.Location = new System.Drawing.Point(1100, 94);
             this.idlabel.Name = "idlabel";
-            this.idlabel.Size = new System.Drawing.Size(58, 13);
+            this.idlabel.Size = new System.Drawing.Size(68, 13);
             this.idlabel.TabIndex = 15;
             this.idlabel.Text = "Product ID";
             // 
@@ -185,6 +193,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SeaShell;
             this.ClientSize = new System.Drawing.Size(1582, 641);
             this.Controls.Add(this.idlabel);
             this.Controls.Add(this.productIdBox);
