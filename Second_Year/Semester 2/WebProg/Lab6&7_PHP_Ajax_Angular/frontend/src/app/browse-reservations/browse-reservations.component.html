@@ -1,0 +1,13 @@
+<h1>Browse reservations!</h1>
+
+
+<table class="reservations">
+    <th *ngFor="let column of columns">{{column}}</th>
+    <tr *ngFor="let reservation of reservations">
+      <td>{{reservation.id}}</td> 
+      <td>{{reservation.roomID}}</td>
+      <td>{{reservation.check_in}}</td>
+      <td>{{reservation.check_out}}</td>
+      <td><button class="btn" (click)="this.cancelReservation(reservation.id)">Cancel reservation</button></td>
+    </tr>
+</table>

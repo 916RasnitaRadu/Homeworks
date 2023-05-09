@@ -1,0 +1,17 @@
+.body{
+    width: calc(100% - 11.5rem);
+    height: 100vh;
+    margin-left: 11.5rem;
+    z-index: 0;
+    position: relative;
+    background: #f4f7fa;
+}
+
+h1 {
+    text-align: center;
+}
+
+iframe {
+    margin-top: 50px;
+    margin-left: 350px;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JQuery Homework</title>
+</head>
+<body>
+    <p><b>Task: </b> Solve the following task using only the jQuery library (production version, jquery.min.js, or developement version, jquery.js); YOU ARE NOT ALLOWED TO USE ANY OTHER JS LIBRARY, PLUGIN OR EXTENSION BESIDES THE JQUERY LIBRARY. Write a web page which contains a table with 10 lines and 4 columns. The table should also have a column header and a column footer. When the user clicks on a cell from the header, the table content will be sorted in ascending order of the cells from the column that the user has clicked on. If the user clicks again on the header cell from that column, the table will be sorted again, but in descending order of the cells from that column. If the user clicks on a footer cell from column i, than the cells from column i will be interchanged with the cells from the column i+1 (if i+1=5, the first column is interchanged with column 4).</p>
+    <div class="table">
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>Student</th>
+                <th>Major</th>
+                <th>Country</th>
+                <th>Age</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>Radu Rasnita</td>
+                <td>Astronomy</td>
+                <td>Romania</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Rafa Carafa</td>
+                <td>Smecherie</td>
+                <td>Greece</td>
+                <td>19</td>
+            </tr>
+
+            <tr>
+                <td>Copsa Florin</td>
+                <td>Computer Science</td>
+                <td>Spain</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>Leonardo Moreno</td>
+                <td>Sociology</td>
+                <td>Norway</td>
+                <td>22</td>
+            </tr>
+
+            <tr>
+                <td>Jevraru Alin</td>
+                <td>Economics</td>
+                <td>Colombia</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>Andrei Stanea</td>
+                <td>Photography</td>
+                <td>Morocco</td>
+                <td>28</td>
+            </tr>
+
+            <tr>
+                <td>Harry Potter</td>
+                <td>Defence Against the Dark Arts</td>
+                <td>UK</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>John Cena</td>
+                <td>WWE</td>
+                <td>USA</td>
+                <td>45</td>
+            </tr>
+
+            <tr>
+                <td>Ysaila Sbescian</td>
+                <td>Geography</td>
+                <td>Lupu</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>Marilyn Monroe</td>
+                <td>Music</td>
+                <td>France</td>
+                <td>26</td>
+            </tr>
+
+
+        </tbody>
+        <tfoot>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tfoot>
+    </table>
+    </div>
+</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</html>

@@ -1,0 +1,12 @@
+* {
+    margin-left: 200px;
+}
+
+.btn {
+    border: 1px solid grey;
+    border-radius: 150px;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+}

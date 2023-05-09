@@ -1,0 +1,35 @@
+html {
+    font-size: 16px;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: inline-block;
+    justify-content: center;
+    min-height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 10px 30px 50px 15px;
+}
+
+table {
+    width: 70%;
+    align-items: center;
+}
+
+.table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+td, th {
+    border: 1px solid;
+    padding: 5px;
+}

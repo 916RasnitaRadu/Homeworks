@@ -1,0 +1,39 @@
+<h1>Browse rooms!</h1>
+
+<div class="form-container">
+    <form [formGroup]="form" (ngSubmit)="submit()">
+        <div class="form-group">
+            <!-- Capacity, Type, Hotel, Price -->
+            <div class="drop-downs" *ngFor="let column of filterColumns;">
+                <label [for]="column">{{column}}:</label>
+                <select [formControlName]="column" class="form-control" [name]="column" [id]="column">
+                    <option *ngIf="column != 'Price'" value="%">Any</option>
+                    <option *ngFor="let value of filterOptions[column]">{{value}}</option>
+                </select>
+            </div>
+
+        </div>
+
+        <br>
+
+        <button id="submit-btn" type="submit" class="btn" (click)="submit()">Submit</button>
+    </form>
+</div>
+
+<br>
+
+<table class="rooms">
+    <th *ngFor="let column of columns">{{column}}</th>
+    <tr *ngFor="let room of rooms">
+        <td>{{room.id}}</td>
+        <td>{{room.capacity}}</td>
+        <td>{{room.type}}</td>
+        <td>{{room.hotel}}</td>
+        <td>{{room.price}}</td>
+        <td><button class="reserve-btn" (click)="reserveRoom(room.id)">Reserve</button></td>
+    </tr>
+</table>
+
+<button id="prev-btn" class="btn" (click)="prev()" *ngIf="currentPage>1">Prev</button>
+<button id="next-btn" class="btn" (click)="next()" *ngIf="currentPage<maxPage">Next</button>
+
