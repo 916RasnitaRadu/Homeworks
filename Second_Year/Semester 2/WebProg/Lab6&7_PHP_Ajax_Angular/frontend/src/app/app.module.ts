@@ -10,6 +10,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { BrowseRoomsComponent } from './browse-rooms/browse-rooms.component';
 import { BrowseReservationsComponent } from './browse-reservations/browse-reservations.component';
 import { AddReservationComponent } from './add-reservation/add-reservation.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AddReservationComponent } from './add-reservation/add-reservation.compo
     SidenavComponent,
     BrowseRoomsComponent,
     BrowseReservationsComponent,
-    AddReservationComponent
+    AddReservationComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

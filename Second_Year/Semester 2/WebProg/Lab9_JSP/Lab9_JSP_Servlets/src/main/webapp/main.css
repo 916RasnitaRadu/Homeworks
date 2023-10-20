@@ -1,0 +1,154 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(45deg, #49a09d, #5f2c82);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    background-color: rgba(255,255,255,0.3);
+    border: 5px solid rgba(255,255,255,0.2);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: x-large;
+}
+
+input {
+    background: transparent;
+    border: 0 solid lightblue;
+    border-bottom-width: 2px;
+    font-weight: bold;
+    font-size: large;
+    color: black;
+}
+
+label {
+     width: 100%;
+    margin-top: 20px;
+}
+
+label button {
+    margin-left: 20px;
+    float: right;
+}
+
+ul {
+    padding: 0;
+    margin: 10px 0 0;
+    list-style-type: none;
+    width: 100%;
+}
+
+li {
+    margin-top: 15px;
+}
+
+li button {
+    margin-left: 20px;
+    float: right;
+}
+
+h3, h5 {
+    margin: 0;
+    font-size: xx-large;
+}
+
+#errorMsg {
+    color: red;
+    font-size: large;
+    display: none;
+    margin-bottom: 0;
+}
+
+.topWrapper {
+    width: 100%;
+    display: flex;
+}
+
+.topWrapper h3 {
+    margin-left: 20px;
+}
+
+.topWrapper button {
+    margin-left: auto;
+}
+
+button {
+    background: #5f2c82;
+    color: white;
+    border-radius: 5px;
+    border-color: transparent;
+    font-weight: bolder;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+a:hover {
+    color: darkred;
+}
+
+
+.notification {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    width: max-content;
+    padding: 20px 15px;
+    border-radius: 4px;
+    background-color: #141619;
+    color: #f6f5f9;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(30px);
+    opacity: 0;
+    visibility: hidden;
+    animation: fade-in 4s linear forwards;
+}
+
+.notification__progress {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    width: calc(100% - 10px);
+    height: 3px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background-image: linear-gradient(to right, #539bdb, #3250bf);
+    border-radius: inherit;
+    animation: load 3s 0.25s linear forwards;
+}
+
+@keyframes fade-in {
+    5% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    90%
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes load {
+    to {
+        transform: scaleX(1);
+    }
+}

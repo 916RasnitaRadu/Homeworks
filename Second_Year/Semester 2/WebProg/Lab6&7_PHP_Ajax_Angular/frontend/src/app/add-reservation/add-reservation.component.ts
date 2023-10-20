@@ -47,9 +47,10 @@ export class AddReservationComponent implements OnInit {
     this.validate().subscribe(
       (response) => {
         if (response) {
+          console.log(this.reservationModel);
           this.service.addRequest(this.reservationModel).subscribe(
-            data => {this.addResponse = `${data}`;},
-            error => {this.addResponse = `Add failed: ${error}`;}
+            data => {alert("Reservation added successfully!")},
+            error => {alert("Add failed!")}
           );
         } else {
           alert("Incorrect dates! There is some overlapping");
@@ -58,8 +59,6 @@ export class AddReservationComponent implements OnInit {
     );
   }
 
-  public updateDate() { 
-  }
 
   public getTodayDate() {
     const today = new Date();

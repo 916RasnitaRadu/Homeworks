@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { navbarData } from './nav-data';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sidenav',
@@ -10,9 +11,13 @@ export class SidenavComponent implements OnInit {
   collapsed = false;
   public navData = navbarData;
 
-  constructor() {}
+  constructor(private router : Router) {}
 
   ngOnInit(): void {
     
+  }
+
+  public goTo(dataLink : string) {
+    this.router.navigateByUrl("/" + dataLink);
   }
 }

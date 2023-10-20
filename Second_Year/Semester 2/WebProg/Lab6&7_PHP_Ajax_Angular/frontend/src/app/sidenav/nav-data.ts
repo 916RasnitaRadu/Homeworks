@@ -1,16 +1,16 @@
 export const navbarData = [
     {  
-        routeLink : '',
+        routeLink : 'body',
         icon: 'assets/home.svg',
         label: 'Home'
     },
     {
-        routeLink: 'browse-rooms',
+        routeLink: 'body/browse-rooms',
         icon: 'assets/list.svg',
         label: "Reserve room"
     },
     {
-        routeLink: 'browse-reservations',
+        routeLink: 'body/browse-reservations',
         icon: 'assets/list.svg',
         label: "Browse Reservations"
     },

@@ -35,7 +35,7 @@ export class BrowseReservationsComponent implements OnInit {
   public cancelReservation(id : any) : void {
     this.service.deleteRequest(id).subscribe(
       response => {
-        alert(response);
+      //  alert(response);
         this.getReservations();
       }
     );

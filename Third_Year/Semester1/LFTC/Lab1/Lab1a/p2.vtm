@@ -1,0 +1,20 @@
+# Computes the greates common divisor of 2 numbers
+
+start
+
+integer a, b;
+
+read(a);
+read(b);
+
+integer gcd, temp;
+
+while (b != 0) {
+    temp = b;
+    b = a % b;
+    a = temp;
+}
+
+gcd = a;
+print("The greatest common divisor is: \n");
+print(gcd);

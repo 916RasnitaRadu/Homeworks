@@ -4,11 +4,13 @@ import { BodyComponent } from './body/body.component';
 import { BrowseRoomsComponent } from './browse-rooms/browse-rooms.component';
 import { BrowseReservationsComponent } from './browse-reservations/browse-reservations.component';
 import { AddReservationComponent } from './add-reservation/add-reservation.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
-  {path: '', component: BodyComponent},
-  {path: 'browse-rooms', component: BrowseRoomsComponent},
-  {path: 'browse-reservations', component: BrowseReservationsComponent},
+  {path: 'body', component: BodyComponent},
+  {path: '', component: LoginComponent},
+  {path: 'body/browse-rooms', component: BrowseRoomsComponent},
+  {path: 'body/browse-reservations', component: BrowseReservationsComponent},
   {path: 'add-reservation', component: AddReservationComponent},
 
 ];

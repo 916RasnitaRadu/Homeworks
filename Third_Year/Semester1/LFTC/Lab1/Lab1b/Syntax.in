@@ -1,0 +1,28 @@
+program := "start " statement_list
+
+simple_type := "integer" | "string" | "char"
+array_declaration := "arr" "<" simple_type ">" identifier "[" unsigned_integer "]"
+declaration := simple_type " " identifier | simple_type " " pure_identifier_list | array_declaration
+pure_identifier_list = identifier {"," identifier}
+indexed_identifier = identifier "[" integer "]"
+
+expression := expression + term | expression - term | term
+term := term * factor | term / factor | factor
+factor := "(" expression ")" | identifier | const
+
+
+assignment_stmt := identifier "=" expression
+if_stmt := "if" "(" condition ")" compound_stmt | "if" "(" condition ")" compound_stmt "else" compound_stmt
+while_stmt := "while" "(" condition ")" compound_stmt
+return_stmt := "return " expression
+for_stmt := "for" for_header compound_stmt
+for_header := "(" "integer" assignment_stmt ";" condition ";" assignment_stmt ")"
+io_stmt := "read" "(" identifier ")" | "print" "(" identifier ")" | "print" "(" const ")" 
+
+statement := assignment_stmt | if_stmt | while_stmt | return_stmt | for_stmt | io_stmt | declaration
+statement_list := statement | statement ";" statement_list
+compound_stmt := "{" statement_list "}"
+
+operator := "+"| "-" | "/" | "*" | "%"
+condition := expression relation expression
+relation := "<" | "<=" | "==" | "!=" | ">=" | ">"

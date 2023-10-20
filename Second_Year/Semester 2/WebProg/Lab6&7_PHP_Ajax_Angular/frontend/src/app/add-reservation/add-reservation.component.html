@@ -5,10 +5,10 @@
         <button class="btn" type="submit" [disabled]="reservationForm.form.invalid">Add</button>
         <div class="inputs">
             <label>Check-in: </label>
-            <input type="date" class="form-control" name="Check-in" required #model="ngModel" [(ngModel)]="reservationModel.check_in" ngModel (change)="updateDate()"> 
+            <input type="date" class="form-control" name="Check-in" required #model="ngModel" [(ngModel)]="reservationModel.check_in" ngModel > 
 
             <label> Check-out: </label>
-            <input type="date" class="form-control" name="Check-out" required #model="ngModel" [(ngModel)]="reservationModel.check_out" ngModel (change)="updateDate()"> 
+            <input type="date" class="form-control" name="Check-out" required #model="ngModel" [(ngModel)]="reservationModel.check_out" ngModel > 
         </div>
         
 
@@ -17,5 +17,5 @@
 
     
 
-    <span [innerHTML]="addResponse" class="alert-info" style="margin-left: 5px"></span>
+   
 </form>

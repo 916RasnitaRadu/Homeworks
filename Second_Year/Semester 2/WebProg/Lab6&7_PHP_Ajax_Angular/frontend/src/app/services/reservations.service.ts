@@ -7,6 +7,7 @@ import { Reservation } from '../model/reservation';
 })
 export class ReservationService {
     private backendUrl : string = "http://localhost/website/server/";
+    private backendUrl2 : string = "http://localhost:5228/Home/";
 
     constructor(private http : HttpClient) {}
 
@@ -23,10 +24,10 @@ export class ReservationService {
     }
 
     public addRequest(reservation : Reservation) : Observable<any> {
-        return this.http.post<any>(`${this.backendUrl}` + 'postReservation2.php',reservation);
+        return this.http.post<Reservation>(`${this.backendUrl2}` + "postReservation",reservation);
     }
 
     public deleteRequest(reservationId : number) : Observable<any> {
-        return this.http.post<any>(`${this.backendUrl}` + 'deleteReservation2.php', reservationId); 
+        return this.http.delete<any>(`${this.backendUrl2}` + 'cancelReservation'+"/" + reservationId); 
     }
 }

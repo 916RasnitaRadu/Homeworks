@@ -1,0 +1,15 @@
+<div class="body">
+    <h1> Welcome to My Room Reservation App!!</h1>
+    <h5> Please log in before you browse bookmarks </h5>
+
+    <form action="login" #loginForm="ngForm" (ngSubmit)="verifyCredentials(loginForm)"> 
+        <label>
+            <input type="text" ngModel name="username" id="username" placeholder="Username: " autocomplete="off" required="">
+        </label>
+        <label>
+            <input type="password" ngModel name="password" placeholder="Password: " autocomplete="off" required="">
+        </label>
+        <button [disabled]="loginForm.invalid" class="btn" type="submit">Login</button>
+    </form>
+
+</div>

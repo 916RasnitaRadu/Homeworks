@@ -1,0 +1,31 @@
+Alphabet:
+a) A-Z, a-z (upper and lowercase letters of the English Alphabet)
+b) 0-9 (digits)
+c) _ (underline character)
+
+1. Lexic
+
+a) Special symbols representing:
+    - operators:
+        - +, -, *, /, % (arithmetic)
+        - ==, <=, <, >, >=, != (relational)
+        - = (assignment)
+
+    - separators: (), [], {}, space, newline, ;, ',' (actual comma)
+    - reserved words: if, else, while, for, int, string, char, read, print, return, start
+
+b) Identifiers
+
+identifier = (letter|"_") {letter|digit|"_"} | letter
+letter = "a"|"b"|...|"z"|"A"|"B"|...|"Z"
+digit = "0"|"1"|...|"9"
+non_zero_digit = "1" | "2" | ... | "9"
+
+c) Constants:
+
+integer = "0" | ["+" | "-"] non_zero_digit {digit}
+unsigned_integer = non_zero_digit {digit}
+char = "'"letter"'" | "'"digit"'"
+string = """ {char} """
+
+const = char | integer | string
