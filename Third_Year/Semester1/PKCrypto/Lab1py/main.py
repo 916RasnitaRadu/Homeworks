@@ -1,5 +1,6 @@
 import random
 import datetime
+import timeit
 
 
 def gcd_euclidean(a, b):
@@ -12,31 +13,19 @@ def gcd_euclidean(a, b):
     elif b == 0:
         return b
     while b != 0:
-        temp = b
-        b = a % b
-        a = temp
+        a, b = b, a % b
     return a
 
 
-def gcd_prime_factors(a, b):
-    """
-    Compute gcd of 2 nr by decomposing the numbers into products of prime factors.
-    The GCD is the product of the common factors, taken at the lowest power.
-    """
-    if a == 0 or a == b:
-        return a
-    elif b == 0:
-        return b
-    i = 2
-    greatest_com_div = 1
-    while a > i or b > i:
-        while a % i == 0 and b % i == 0:
-            greatest_com_div *= i
-            a //= i
-            b //= i
-        i += 1
+def gcd_subtraction(a, b):
+    while (a != b):
+        if a > b:
+            a -= b
+        else :
+            b -= a
+    return a
 
-    return greatest_com_div
+
 
 
 def gcd_brute_force(x, y):
@@ -59,26 +48,31 @@ if __name__ == '__main__':
         a = random.randint(0, 100) * 10000 + 1
         b = random.randint(0, 100) * 10000 + 1
 
-        print("\na={},b={}".format(a, b))
+        print("============> Number {}) a={},b={}".format(i+1, a, b))
 
         print("Start Euclidean GCD")
-        start = datetime.datetime.now()
-        gcd = gcd_euclidean(a, b)
-        end = datetime.datetime.now()
-        print("Time elapsed: {:.12f}".format((end-start).total_seconds()))
-        print("Gcd is {}\n".format(gcd))
+        euclidean = timeit.timeit(lambda: gcd_euclidean(a, b), number=50)
+        print("\tTime elapsed: {:.40f}".format(euclidean))
+        print("\tGCD is: ", gcd_euclidean(a, b), "\n")
 
-        print("Start Prime Factorization GCD")
-        start = datetime.datetime.now()
-        gcd = gcd_prime_factors(a, b)
-        end = datetime.datetime.now()
-        print("Time elapsed: {}".format(end - start))
-        print("Gcd is {}\n".format(gcd))
+        print("Start Prime Subtraction GCD")
+        fact_time = timeit.timeit(lambda: gcd_subtraction(a, b), number=50)
+        print("\tTime elapsed: {}".format(fact_time))
+        print("\tGCD is: ", gcd_subtraction(a, b), "\n")
 
         print("Start Brute Force GCD")
-        start = datetime.datetime.now()
-        gcd = gcd_brute_force(a, b)
-        end = datetime.datetime.now()
-        print("Time elapsed: {}".format(end - start))
-        print("Gcd is {}\n".format(gcd))
+        brute_time = timeit.timeit(lambda: gcd_brute_force(a, b), number=50)
+        print("\tTime elapsed: {}".format(brute_time))
+        print("\tGCD is: ", gcd_brute_force(a, b), "\n")
 
+
+"""
+Lab 2: problem 4
+get a nr n;
+search if is prime
+S0: n-1 = 2^S * t
+t in binary
+S1: 
+Choose a primary base
+compute: b^, b^2t, ...., b^(2^S)*t
+"""
