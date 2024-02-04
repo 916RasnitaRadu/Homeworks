@@ -1,0 +1,12 @@
+start
+integer a;
+read(a);
+
+integer sum;
+sum = 0;
+
+for (integer i = 1 ; i < a ; i = i + 1) {
+    sum = sum + i;
+}
+
+print(sum);

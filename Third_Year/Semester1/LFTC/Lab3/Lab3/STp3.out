@@ -1,0 +1,4 @@
+SymbolTable{size=30
+ identifierTable=HashTable{size=30, table=[[], [], [], [], [], [], [], [a], [], [], [], [], [], [], [], [i], [], [], [], [], [n], [], [p], [], [], [], [], [], [], []]}
+ stringConstantTable=HashTable{size=30, table=[[], [], [], [], [], [], [], [], ["The number of even numbers in the array is: "], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]}
+ intConstantTable=HashTable{size=30, table=[[0], [1], [2], [], [], [], [], [], [], [], [100], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]}}

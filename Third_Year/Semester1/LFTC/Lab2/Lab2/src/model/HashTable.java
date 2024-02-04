@@ -43,9 +43,9 @@ public class HashTable<T> {
         return new Pair<Integer,Integer>(-1,-1);
     }
 
-    public boolean contains(T item) {
-        int hashValue = getHashValue(item);
-        return table.get(hashValue).contains(item);
+    public boolean contains(T key) {
+        int hashValue = getHashValue(key);
+        return table.get(hashValue).contains(key);
     }
 
     @Override

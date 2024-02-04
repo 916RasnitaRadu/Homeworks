@@ -38,6 +38,10 @@ def crt_algo(congruences):
     return x % M
 
 
+m = 1
 congruences = [(2, 3), (3, 4), (2, 5), (5, 7)]
+for congruence in congruences:
+    m *= congruence[1]
 x = crt_algo(congruences)
-print("Solution is: ", x)
+print("Solution is", x, "(%", m, ")")
+

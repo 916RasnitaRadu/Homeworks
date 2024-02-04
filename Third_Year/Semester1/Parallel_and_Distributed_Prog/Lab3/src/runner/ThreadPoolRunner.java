@@ -9,7 +9,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 public class ThreadPoolRunner {
-    public static void run(Matrix first, Matrix second, Matrix result, int nrThreads, String type) throws MatrixException {
+    public static void run(Matrix first, Matrix second, Matrix result, int nrThreads, String type, double start) throws MatrixException {
         ExecutorService service = Executors.newFixedThreadPool(nrThreads);
 
         switch (type) {
@@ -40,7 +40,10 @@ public class ThreadPoolRunner {
             if (!service.awaitTermination(300, TimeUnit.SECONDS)) {
                 service.shutdown();
             }
-            System.out.println("result:\n" + result.toString());
+            double end = System.nanoTime() / 1_000_000.0;
+
+            System.out.println("Time elapsed: " + (end-start)/1000 + " seconds");
+       //     System.out.println("result:\n" + result.toString());
         }
         catch (Exception e) {
             service.shutdown();

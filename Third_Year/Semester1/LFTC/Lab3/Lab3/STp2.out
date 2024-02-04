@@ -1,0 +1,4 @@
+SymbolTable{size=30
+ identifierTable=HashTable{size=30, table=[[], [], [gcd], [], [], [], [], [a], [b], [], [], [], [], [], [], [], [], [], [temp], [], [], [], [], [], [], [], [], [], [], []]}
+ stringConstantTable=HashTable{size=30, table=[[], [], [], [], [], [], [], ["The greatest common divisor is: \n"], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]}
+ intConstantTable=HashTable{size=30, table=[[0], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]}}

@@ -1,0 +1,4 @@
+SymbolTable{size=30
+ identifierTable=HashTable{size=30, table=[[integer], [], [], [], [], [], [], [a], [], [], [], [sum], [], [], [], [i], [], [print], [start], [], [], [], [read], [], [], [], [], [for], [], []]}
+ stringConstantTable=HashTable{size=30, table=[[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]}
+ intConstantTable=HashTable{size=30, table=[[0], [1], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], []]}}

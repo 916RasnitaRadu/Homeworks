@@ -1,0 +1,5 @@
+states={a, b, c, d}
+initial_state=a
+out_states={b, d}
+alphabet={0, 1, 2, 3, 4, 5, 6, 7, 8, 9, +, -}
+transitions={(a, b, 0); (a, c, -); (a, c, +); (c, d, 1); (c, d, 2); (c, d, 3); (c, d, 4); (c, d, 5); (c, d, 6); (c, d, 7); (c, d, 8); (c, d, 9); (a, d, 1); (a, d, 2); (a, d, 3); (a, d, 4); (a, d, 5); (a, d, 6); (a, d, 7); (a, d, 8); (a, d, 9); (d, d, 0); (d, d, 1); (d, d, 2); (d, d, 3); (d, d, 4); (d, d, 5); (d, d, 6); (d, d, 7); (d, d, 8); (d, d, 9)}

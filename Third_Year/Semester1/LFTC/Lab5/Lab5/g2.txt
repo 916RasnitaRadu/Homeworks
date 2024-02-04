@@ -1,0 +1,27 @@
+N = {program,simple_type,array_declaration,declaration,pure_identifier_list,indexed_identifier,expression,term,factor,assignment_stmt,if_stmt,while_stmt,return_stmt,for_stmt,for_header,io_stmt,statement,statement_list,condition,identifTemp,ifTemp,relation}
+E = {integer,string,char,arr,identifier,unsigned_integer,(,),[,],if,else,while,return,for,read,print,const,start,+,-,/,*,<,<=,==,!=,>=,>,=,;}
+S = program
+P = {
+	program -> start statement_list,
+	simple_type -> integer | string | char,
+	array_declaration -> arr < simple_type > identifier [ unsigned_integer ],
+	pure_identifier_list -> identifier identifTemp,
+	identifTemp -> E | identifier,
+	declaration -> simple_type identifier | simple_type pure_identifier_list | array_declaration,
+	indexed_identifier -> identifier [ integer ],
+	factor -> ( expression ) | identifier | const,
+	term -> term * factor | term / factor | factor,
+	expression -> expression + term | expression - term | term,
+	assignment_stmt -> identifier = expression,
+	return_stmt -> return expression,
+	for_header -> ( integer assignment_stmt ; condition ; assignment_stmt ),
+	for_stmt -> for for_header statement_list,
+	io_stmt -> read ( identifier ) | print ( identifier ),
+	if_stmt -> if ( condition ) statement_list ifTemp,
+	ifTemp -> E | else statement_list,
+	while_stmt -> while ( condition ) statement_list,
+	statement -> assignment_stmt | if_stmt | while_stmt | return_stmt | for_stmt | io_stmt | declaration,
+	statement_list -> statement | statement ; statement_list,
+	condition -> expression relation expression,
+	relation -> < | <= | == | != | >= | >,
+}

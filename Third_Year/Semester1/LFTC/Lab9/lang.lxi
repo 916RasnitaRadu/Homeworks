@@ -1,0 +1,70 @@
+%{
+    #include <stdio.h>
+    #include <stdlib.h>
+    #include <string.h>
+    #include "lang.tab.h"
+    int lines = 1;
+%}
+
+%option noyywrap
+%option caseless
+
+DIGIT [0-9]
+NON_ZERO_DIGIT [1-9]
+INT_CONSTANT [+-]?{NON_ZERO_DIGIT}{DIGIT}*|0
+LETTER [a-zA-Z_]
+SPECIAL_CHAR [ ?:*\^+=.!]
+STRING_CONSTANT (\"({LETTER}|{DIGIT}|{SPECIAL_CHAR})*\")
+id {LETTER}({LETTER}|{DIGIT})*
+BAD_IDENTIFIER ({DIGIT})+({LETTER})+({LETTER}|{DIGIT})*
+
+%%
+
+"start" { printf("SCANNER: %s - reserved word\n", yytext); return START; }
+"int" { printf("SCANNER: %s - reserved word\n", yytext); return INT; }
+"str" { printf("SCANNER: %s - reserved word\n", yytext); return STR; }
+"char" { printf("SCANNER: %s - reserved word\n", yytext); return CHAR; }
+"read" { printf("SCANNER: %s - reserved word\n", yytext); return READ; }
+"if" { printf("SCANNER: %s - reserved word\n", yytext); return IF; }
+"else" { printf("SCANNER: %s - reserved word\n", yytext); return ELSE; }
+"print" { printf("SCANNER: %s - reserved word\n", yytext); return PRINT; }
+"while" { printf("SCANNER: %s - reserved word\n", yytext); return WHILE; }
+"arr" { printf("SCANNER: %s - reserved word\n", yytext); return ARR; }
+
+"+" { printf("SCANNER: %s - operator\n", yytext); return PLUS; }
+"-" { printf("SCANNER: %s - operator\n", yytext); return MINUS; }
+"*" { printf("SCANNER: %s - operator\n", yytext); return TIMES; }
+"/" { printf("SCANNER: %s - operator\n", yytext); return DIV; }
+"<" { printf("SCANNER: %s - operator\n", yytext); return LESS; }
+"<=" { printf("SCANNER: %s - operator\n", yytext); return LESS_EQ; }
+"=" { printf("SCANNER: %s - operator\n", yytext); return EQ; }
+">=" { printf("SCANNER: %s - operator\n", yytext); return BIGGER_EQ; }
+"==" { printf("SCANNER: %s - operator\n", yytext); return EQQ; }
+"<>" { printf("SCANNER: %s - operator\n", yytext); return NEQ; }
+">" { printf("SCANNER: %s - operator\n", yytext); return BIGGER; }
+"sqrt" { printf("SCANNER: %s - operator\n", yytext); return SQRT; }
+
+"[" { printf("SCANNER: %s - separator\n", yytext); return SQ_BRACKET_OPEN; }
+"]" { printf("SCANNER: %s - separator\n", yytext); return SQ_BRACKET_CLOSE; } 
+";" { printf("SCANNER: %s - separator\n", yytext); return SEMICOLON; } 
+"(" { printf("SCANNER: %s - separator\n", yytext); return OPEN; } 
+")" { printf("SCANNER: %s - separator\n", yytext); return CLOSE; }
+"{" { printf("SCANNER: %s - separator\n", yytext); return BRACKET_OPEN; } 
+"}" { printf("SCANNER: %s - separator\n", yytext); return BRACKET_CLOSE; } 
+"," { printf("SCANNER: %s - separator\n", yytext); return COMMA; }
+
+{id} { printf("SCANNER: %s - identifier\n", yytext); return ID; }
+
+{BAD_IDENTIFIER} { printf("SCANNER: Error at token %s at line %d\n", yytext, lines); return -1; }
+
+{INT_CONSTANT} { printf("SCANNER: %s - integer constant\n", yytext); return INT_CONSTANT; }
+
+{STRING_CONSTANT} { printf("SCANNER: %s - string constant\n", yytext); return STRING_CONSTANT; }
+
+[ \t]+ {}
+
+[\n]+ {++lines;}
+
+. {printf("SCANNER: Error at token %s at line %d\n", yytext, lines); exit(1);}
+
+%%

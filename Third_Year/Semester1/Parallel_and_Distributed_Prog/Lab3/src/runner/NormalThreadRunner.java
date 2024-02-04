@@ -9,7 +9,7 @@ import java.util.List;
 
 public class NormalThreadRunner {
 
-    public static void run(Matrix first, Matrix second, Matrix result, int nrThreads, String type) throws MatrixException {
+    public static void run(Matrix first, Matrix second, Matrix result, int nrThreads, String type, double start) throws MatrixException {
         List<Thread> threads = new ArrayList<>();
 
         switch (type) {
@@ -46,6 +46,9 @@ public class NormalThreadRunner {
                 System.out.println(e.getMessage());
             }
         }
-        System.out.println("result:\n" + result.toString());
+
+        double end = System.nanoTime() / 1_000_000.0;
+        System.out.println("Time elapsed: " + (end-start)/1000 + " seconds");
+       // System.out.println("result:\n" + result.toString());
     }
 }

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "STARTIMG SCRIPT"
+
+flex lang.lxi
+bison -d lang.y
+gcc -o parser lex.yy.c lang.tab.c -lfl
+
+echo "GATA"

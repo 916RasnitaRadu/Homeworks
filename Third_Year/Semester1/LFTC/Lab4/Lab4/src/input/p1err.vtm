@@ -1,0 +1,13 @@
+strt
+
+int sum;
+
+read(a);
+
+sum = 0;
+&
+fr (integer i = 1; i < a; i = i + 1) {
+    sum = sum + i;
+}
+
+print(sum);
